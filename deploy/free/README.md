@@ -7,7 +7,7 @@ Live setup for this project:
 | API + worker + models + **farmer web app** | Hugging Face Space `barath80/Project` -> https://barath80-project.hf.space |
 | Database | Supabase project `mvutuwjehidquifrfycd` (Tokyo) |
 | Admin dashboard | Vercel (import the GitHub repo, root `admin`, env `AGRISMART_API_URL=https://barath80-project.hf.space`) |
-| Android APK | https://github.com/sunkireddy-Barath/AgriSmart/releases/download/apk-latest/AgriSmart.apk (built free by GitHub Actions; rebuild from the repo's Actions tab -> "Build Android APK" -> Run workflow, and type a different API address if it changes) |
+| Android APK | https://github.com/barath80/AgriSmart/releases/download/apk-latest/AgriSmart.apk (built free by GitHub Actions; rebuild from the repo's Actions tab -> "Build Android APK" -> Run workflow, and type a different API address if it changes) |
 
 The Space serves the farmer web app at `/` and the API at `/api/v1`, so the web app needs no CORS setup.
 Admin login: the `ADMIN_EMAIL` / `ADMIN_PASSWORD` secrets on the Space.
