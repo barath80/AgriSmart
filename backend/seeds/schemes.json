@@ -1,0 +1,112 @@
+[
+ {
+  "code": "pm_kisan",
+  "name": "PM-KISAN (Pradhan Mantri Kisan Samman Nidhi)",
+  "names": {"hi": "प्रधानमंत्री किसान सम्मान निधि (पीएम-किसान)", "ta": "பிரதம மந்திரி கிசான் சம்மான் நிதி (பிஎம்-கிசான்)", "te": "ప్రధాన మంత్రి కిసాన్ సమ్మాన్ నిధి (పీఎం-కిసాన్)", "kn": "ಪ್ರಧಾನ ಮಂತ್ರಿ ಕಿಸಾನ್ ಸಮ್ಮಾನ್ ನಿಧಿ (ಪಿಎಂ-ಕಿಸಾನ್)", "mr": "प्रधानमंत्री किसान सन्मान निधी (पीएम-किसान)", "bn": "প্রধানমন্ত্রী কিষাণ সম্মান নিধি (পিএম-কিষাণ)", "gu": "પ્રધાનમંત્રી કિસાન સન્માન નિધિ (પીએમ-કિસાન)", "ml": "പ്രധാനമന്ത്രി കിസാൻ സമ്മാൻ നിധി (പിഎം-കിസാൻ)", "pa": "ਪ੍ਰਧਾਨ ਮੰਤਰੀ ਕਿਸਾਨ ਸਨਮਾਨ ਨਿਧੀ (ਪੀਐੱਮ-ਕਿਸਾਨ)", "or": "ପ୍ରଧାନମନ୍ତ୍ରୀ କିଷାନ ସମ୍ମାନ ନିଧି (ପିଏମ-କିଷାନ)"},
+  "summary": "Income support for landholding farmer families, paid directly to the bank account.",
+  "benefits": "Rs 6,000 per year in three equal instalments of Rs 2,000, transferred directly to the farmer's Aadhaar-linked bank account.",
+  "eligibility_text": "Landholding farmer families with cultivable land in their name. Excluded: institutional landholders, income-tax payers, holders of constitutional posts, serving or retired government employees (except Group D/MTS), and professionals such as doctors and engineers.",
+  "application_process": "Register on the PM-KISAN portal (Farmers Corner > New Farmer Registration), at a Common Service Centre (CSC), or through the village patwari / agriculture officer. e-KYC and Aadhaar-bank seeding are mandatory.",
+  "official_url": "https://pmkisan.gov.in",
+  "source": "admin",
+  "last_verified_on": "2026-01-15",
+  "rules": [
+   {"rule_type": "min_land_acres", "value": 0.01}
+  ]
+ },
+ {
+  "code": "pmfby",
+  "name": "Pradhan Mantri Fasal Bima Yojana (Crop Insurance)",
+  "names": {"hi": "प्रधानमंत्री फसल बीमा योजना", "ta": "பிரதம மந்திரி பயிர் காப்பீட்டுத் திட்டம்", "te": "ప్రధాన మంత్రి ఫసల్ బీమా యోజన (పంట బీమా)", "kn": "ಪ್ರಧಾನ ಮಂತ್ರಿ ಫಸಲ್ ಬಿಮಾ ಯೋಜನೆ (ಬೆಳೆ ವಿಮೆ)", "mr": "प्रधानमंत्री पीक विमा योजना", "bn": "প্রধানমন্ত্রী ফসল বিমা যোজনা", "gu": "પ્રધાનમંત્રી પાક વીમા યોજના", "ml": "പ്രധാനമന്ത്രി ഫസൽ ബീമാ യോജന (വിള ഇൻഷുറൻസ്)", "pa": "ਪ੍ਰਧਾਨ ਮੰਤਰੀ ਫ਼ਸਲ ਬੀਮਾ ਯੋਜਨਾ", "or": "ପ୍ରଧାନମନ୍ତ୍ରୀ ଫସଲ ବୀମା ଯୋଜନା"},
+  "summary": "Crop insurance against yield loss from natural calamities, pests and diseases, at a low farmer premium.",
+  "benefits": "Farmer premium is capped at 2% of sum insured for Kharif food and oilseed crops, 1.5% for Rabi food and oilseed crops, and 5% for commercial/horticultural crops; the government pays the rest.",
+  "eligibility_text": "All farmers, including sharecroppers and tenant farmers, growing notified crops in notified areas. Enrolment is voluntary.",
+  "application_process": "Apply before the seasonal cut-off date through your bank, a CSC, an insurance company agent, or the National Crop Insurance Portal. Keep land records and the sowing certificate ready.",
+  "official_url": "https://pmfby.gov.in",
+  "source": "admin",
+  "last_verified_on": "2026-01-15",
+  "rules": []
+ },
+ {
+  "code": "kisan_credit_card",
+  "name": "Kisan Credit Card (KCC)",
+  "names": {"hi": "किसान क्रेडिट कार्ड", "ta": "கிசான் கடன் அட்டை", "te": "కిసాన్ క్రెడిట్ కార్డ్", "kn": "ಕಿಸಾನ್ ಕ್ರೆಡಿಟ್ ಕಾರ್ಡ್", "mr": "किसान क्रेडिट कार्ड", "bn": "কিষাণ ক্রেডিট কার্ড", "gu": "કિસાન ક્રેડિટ કાર્ડ", "ml": "കിസാൻ ക്രെഡിറ്റ് കാർഡ്", "pa": "ਕਿਸਾਨ ਕ੍ਰੈਡਿਟ ਕਾਰਡ", "or": "କିଷାନ କ୍ରେଡିଟ କାର୍ଡ"},
+  "summary": "Timely, low-interest short-term credit for cultivation, post-harvest and allied activities.",
+  "benefits": "Crop loans at a concessional interest rate with interest subvention; prompt repayment earns an additional interest incentive. Also covers animal husbandry and fisheries working capital.",
+  "eligibility_text": "Owner-cultivators, tenant farmers, oral lessees, sharecroppers and self-help or joint liability groups of farmers.",
+  "application_process": "Apply at any commercial, regional rural or cooperative bank with land records, identity proof and a passport photograph. Many banks accept the application through the PM-KISAN portal.",
+  "official_url": "https://www.myscheme.gov.in/schemes/kcc",
+  "source": "admin",
+  "last_verified_on": "2026-01-15",
+  "rules": []
+ },
+ {
+  "code": "soil_health_card",
+  "name": "Soil Health Card Scheme",
+  "names": {"hi": "मृदा स्वास्थ्य कार्ड योजना", "ta": "மண் வள அட்டை திட்டம்", "te": "భూసార ఆరోగ్య కార్డు పథకం", "kn": "ಮಣ್ಣಿನ ಆರೋಗ್ಯ ಕಾರ್ಡ್ ಯೋಜನೆ", "mr": "मृदा आरोग्य पत्रिका योजना", "bn": "মৃত্তিকা স্বাস্থ্য কার্ড প্রকল্প", "gu": "જમીન આરોગ્ય કાર્ડ યોજના", "ml": "മണ്ണ് ആരോഗ്യ കാർഡ് പദ്ധതി", "pa": "ਮਿੱਟੀ ਸਿਹਤ ਕਾਰਡ ਯੋਜਨਾ", "or": "ମୃତ୍ତିକା ସ୍ୱାସ୍ଥ୍ୟ କାର୍ଡ ଯୋଜନା"},
+  "summary": "Free soil testing with crop-wise fertilizer recommendations for your field.",
+  "benefits": "A Soil Health Card listing 12 soil parameters (N, P, K, pH, micronutrients and more) with fertilizer recommendations, free of cost.",
+  "eligibility_text": "All farmers.",
+  "application_process": "Contact your agriculture department office or nearest soil testing laboratory to have a soil sample collected. Cards can be viewed on the Soil Health Card portal.",
+  "official_url": "https://soilhealth.dac.gov.in",
+  "source": "admin",
+  "last_verified_on": "2026-01-15",
+  "rules": []
+ },
+ {
+  "code": "pmksy_per_drop_more_crop",
+  "name": "PMKSY – Per Drop More Crop (Micro Irrigation)",
+  "names": {"hi": "प्रधानमंत्री कृषि सिंचाई योजना – पर ड्रॉप मोर क्रॉप", "ta": "பிரதம மந்திரி விவசாய நீர்ப்பாசனத் திட்டம் – ஒவ்வொரு துளிக்கும் அதிக பயிர்", "te": "ప్రధాన మంత్రి కృషి సించాయీ యోజన – ప్రతి చుక్కకు ఎక్కువ పంట", "kn": "ಪ್ರಧಾನ ಮಂತ್ರಿ ಕೃಷಿ ಸಿಂಚಾಯಿ ಯೋಜನೆ – ಪ್ರತಿ ಹನಿಗೆ ಹೆಚ್ಚು ಬೆಳೆ", "mr": "प्रधानमंत्री कृषी सिंचन योजना – प्रति थेंब अधिक पीक", "bn": "প্রধানমন্ত্রী কৃষি সেচ যোজনা – প্রতি ফোঁটায় বেশি ফসল", "gu": "પ્રધાનમંત્રી કૃષિ સિંચાઈ યોજના – દરેક ટીપે વધુ પાક", "ml": "പ്രധാനമന്ത്രി കൃഷി സിഞ്ചായി യോജന – ഓരോ തുള്ളിക്കും കൂടുതൽ വിള", "pa": "ਪ੍ਰਧਾਨ ਮੰਤਰੀ ਕ੍ਰਿਸ਼ੀ ਸਿੰਚਾਈ ਯੋਜਨਾ – ਹਰ ਬੂੰਦ ਨਾਲ ਵੱਧ ਫ਼ਸਲ", "or": "ପ୍ରଧାନମନ୍ତ୍ରୀ କୃଷି ସିଞ୍ଚାଇ ଯୋଜନା – ପ୍ରତି ବୁନ୍ଦାରେ ଅଧିକ ଫସଲ"},
+  "summary": "Subsidy for drip and sprinkler irrigation systems to save water and raise yields.",
+  "benefits": "Financial assistance for installing drip or sprinkler systems; small and marginal farmers receive a higher subsidy share than other farmers. Exact rates vary by state.",
+  "eligibility_text": "Farmers with cultivable land and a water source. Higher assistance for small and marginal farmers.",
+  "application_process": "Apply through your state horticulture or agriculture department's micro-irrigation portal or district office.",
+  "official_url": "https://pmksy.gov.in",
+  "source": "admin",
+  "last_verified_on": "2026-01-15",
+  "rules": []
+ },
+ {
+  "code": "pm_kusum",
+  "name": "PM-KUSUM (Solar Pumps for Farmers)",
+  "names": {"hi": "पीएम-कुसुम", "ta": "பிஎம்-குசும் (விவசாயிகளுக்கான சூரிய சக்தி பம்புகள்)", "te": "పీఎం-కుసుమ్ (రైతులకు సౌర పంపులు)", "kn": "ಪಿಎಂ-ಕುಸುಮ್ (ರೈತರಿಗೆ ಸೌರ ಪಂಪ್‌ಗಳು)", "mr": "पीएम-कुसुम (शेतकऱ्यांसाठी सौर पंप)", "bn": "পিএম-কুসুম (কৃষকদের জন্য সৌর পাম্প)", "gu": "પીએમ-કુસુમ (ખેડૂતો માટે સૌર પંપ)", "ml": "പിഎം-കുസും (കർഷകർക്ക് സോളാർ പമ്പുകൾ)", "pa": "ਪੀਐੱਮ-ਕੁਸੁਮ (ਕਿਸਾਨਾਂ ਲਈ ਸੋਲਰ ਪੰਪ)", "or": "ପିଏମ-କୁସୁମ (ଚାଷୀଙ୍କ ପାଇଁ ସୌର ପମ୍ପ)"},
+  "summary": "Subsidy for standalone solar irrigation pumps and solarisation of grid-connected pumps.",
+  "benefits": "Central and state assistance covering a large share of the cost of a solar pump; the farmer pays the remainder (bank loans available). Exact shares vary by state.",
+  "eligibility_text": "Individual farmers, groups of farmers, FPOs and water user associations. Component-wise conditions are set by each state.",
+  "application_process": "Apply through your state's renewable energy or agriculture department PM-KUSUM portal when applications are open.",
+  "official_url": "https://pmkusum.mnre.gov.in",
+  "source": "admin",
+  "last_verified_on": "2026-01-15",
+  "rules": []
+ },
+ {
+  "code": "pm_kisan_maandhan",
+  "name": "PM Kisan Maan-Dhan Yojana (Farmer Pension)",
+  "names": {"hi": "प्रधानमंत्री किसान मान-धन योजना", "ta": "பிரதம மந்திரி கிசான் மான்-தன் திட்டம் (விவசாயிகள் ஓய்வூதியம்)", "te": "ప్రధాన మంత్రి కిసాన్ మాన్-ధన్ యోజన (రైతు పింఛను)", "kn": "ಪ್ರಧಾನ ಮಂತ್ರಿ ಕಿಸಾನ್ ಮಾನ್-ಧನ್ ಯೋಜನೆ (ರೈತರ ಪಿಂಚಣಿ)", "mr": "प्रधानमंत्री किसान मानधन योजना (शेतकरी निवृत्तीवेतन)", "bn": "প্রধানমন্ত্রী কিষাণ মান-ধন যোজনা (কৃষক পেনশন)", "gu": "પ્રધાનમંત્રી કિસાન માનધન યોજના (ખેડૂત પેન્શન)", "ml": "പ്രധാനമന്ത്രി കിസാൻ മാൻ-ധൻ യോജന (കർഷക പെൻഷൻ)", "pa": "ਪ੍ਰਧਾਨ ਮੰਤਰੀ ਕਿਸਾਨ ਮਾਨ-ਧਨ ਯੋਜਨਾ (ਕਿਸਾਨ ਪੈਨਸ਼ਨ)", "or": "ପ୍ରଧାନମନ୍ତ୍ରୀ କିଷାନ ମାନ-ଧନ ଯୋଜନା (ଚାଷୀ ପେନସନ)"},
+  "summary": "Voluntary pension scheme for small and marginal farmers.",
+  "benefits": "Assured pension of Rs 3,000 per month after age 60. The government matches the farmer's monthly contribution (Rs 55 to Rs 200 depending on entry age).",
+  "eligibility_text": "Small and marginal farmers aged 18 to 40 years with cultivable land up to 2 hectares (about 4.94 acres).",
+  "application_process": "Enrol at a Common Service Centre with Aadhaar and a savings bank account, or self-enrol on the Maandhan portal.",
+  "official_url": "https://maandhan.in",
+  "source": "admin",
+  "last_verified_on": "2026-01-15",
+  "rules": [
+   {"rule_type": "min_age", "value": 18},
+   {"rule_type": "max_age", "value": 40},
+   {"rule_type": "max_land_acres", "value": 4.94}
+  ]
+ },
+ {
+  "code": "e_nam",
+  "name": "e-NAM (National Agriculture Market)",
+  "names": {"hi": "ई-नाम (राष्ट्रीय कृषि बाजार)", "ta": "இ-நாம் (தேசிய வேளாண் சந்தை)", "te": "ఇ-నామ్ (జాతీయ వ్యవసాయ మార్కెట్)", "kn": "ಇ-ನಾಮ್ (ರಾಷ್ಟ್ರೀಯ ಕೃಷಿ ಮಾರುಕಟ್ಟೆ)", "mr": "ई-नाम (राष्ट्रीय कृषी बाजार)", "bn": "ই-নাম (জাতীয় কৃষি বাজার)", "gu": "ઈ-નામ (રાષ્ટ્રીય કૃષિ બજાર)", "ml": "ഇ-നാം (ദേശീയ കാർഷിക വിപണി)", "pa": "ਈ-ਨਾਮ (ਰਾਸ਼ਟਰੀ ਖੇਤੀਬਾੜੀ ਮੰਡੀ)", "or": "ଇ-ନାମ (ଜାତୀୟ କୃଷି ବଜାର)"},
+  "summary": "Online trading platform linking mandis, so farmers can get competitive bids for their produce.",
+  "benefits": "Transparent online bidding across markets, quality assaying and direct payment to the bank account.",
+  "eligibility_text": "All farmers selling in e-NAM integrated mandis.",
+  "application_process": "Register on the e-NAM portal or app, or at your e-NAM mandi, with identity proof and bank details.",
+  "official_url": "https://enam.gov.in",
+  "source": "admin",
+  "last_verified_on": "2026-01-15",
+  "rules": []
+ }
+]

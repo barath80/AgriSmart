@@ -1,0 +1,16 @@
+{
+  "weather": ["weather", "rain", "raining", "temperature", "forecast", "humidity", "wind", "storm", "climate", "hot today", "cold today", "cyclone", "rains", "rainy"],
+  "market_price": ["price", "rate", "market", "mandi", "sell", "selling", "how much is", "prices", "rates", "markets"],
+  "crop_recommendation": ["which crop", "what crop", "crop should i grow", "what should i grow", "what to grow", "recommend a crop", "suitable crop", "best crop", "what should i sow", "what to plant"],
+  "disease_diagnosis": ["disease", "sick", "infection", "spots", "leaf", "leaves", "yellowing", "wilting", "blight", "rot", "fungus", "plant has a problem", "problem with my plant", "diseases", "infected"],
+  "pest_diagnosis": ["pest", "insect", "bug", "worm", "caterpillar", "aphid", "locust", "beetle", "pests", "insects", "bugs", "worms", "caterpillars", "aphids", "beetles"],
+  "schemes": ["scheme", "subsidy", "government", "yojana", "loan", "insurance", "pm kisan", "benefit", "schemes", "subsidies", "loans"],
+  "yield_estimate": ["yield", "how much will i harvest", "production", "how much will i get", "quintal per acre"],
+  "profit": ["profit", "loss", "income", "earn", "revenue", "expense"],
+  "calendar": ["when should i", "fertilizer", "fertiliser", "urea", "irrigate", "irrigation", "schedule", "calendar", "next task", "when to"],
+  "greeting": ["hello", "hi", "namaste", "good morning", "good evening", "vanakkam"],
+  "help": ["help", "what can you do", "how do i use", "agrismart", "agri smart", "agrosmart", "agro smart", "this app", "the app", "your app", "how does it work", "how does this work", "what is this app"],
+  "time_tomorrow": ["tomorrow"],
+  "time_today": ["today", "now"],
+  "notifications": ["alert", "alerts", "notification", "notifications", "any news", "messages", "updates"]
+}

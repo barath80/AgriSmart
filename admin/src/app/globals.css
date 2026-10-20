@@ -1,0 +1,91 @@
+@import "tailwindcss";
+
+/* Design tokens. Chart series colours are the validated categorical palette (slots 1-3),
+   stepped separately for the dark surface — not an automatic inversion. */
+:root {
+  color-scheme: light;
+  --surface-0: #f6f6f3;
+  --surface-1: #fcfcfb;
+  --surface-2: #efefeb;
+  --border: #dedcd5;
+  --text-primary: #0b0b0b;
+  --text-secondary: #52514e;
+  --text-muted: #77756f;
+  --brand: #1b5e20;
+  --brand-contrast: #ffffff;
+  --series-1: #2a78d6;
+  --series-2: #eb6834;
+  --series-3: #1baf7a;
+  --grid: #e6e4de;
+  --good: #1e6b34;
+  --good-surface: #e3f2e6;
+  --warning: #8a5300;
+  --warning-surface: #fff3d6;
+  --critical: #b3261e;
+  --critical-surface: #fce8e6;
+  --info: #0b57d0;
+  --info-surface: #e5eefc;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root:where(:not([data-theme="light"])) {
+    color-scheme: dark;
+    --surface-0: #121211;
+    --surface-1: #1a1a19;
+    --surface-2: #242422;
+    --border: #383835;
+    --text-primary: #ffffff;
+    --text-secondary: #c3c2b7;
+    --text-muted: #9a998f;
+    --brand: #6fbf73;
+    --brand-contrast: #0b1f0c;
+    --series-1: #3987e5;
+    --series-2: #d95926;
+    --series-3: #199e70;
+    --grid: #2e2e2b;
+    --good: #7fd18a;
+    --good-surface: #1d3321;
+    --warning: #f2c063;
+    --warning-surface: #3a2c0d;
+    --critical: #f2938d;
+    --critical-surface: #3d1a17;
+    --info: #8fb4f5;
+    --info-surface: #172a4a;
+  }
+}
+
+@theme inline {
+  --color-surface-0: var(--surface-0);
+  --color-surface-1: var(--surface-1);
+  --color-surface-2: var(--surface-2);
+  --color-line: var(--border);
+  --color-ink: var(--text-primary);
+  --color-ink-2: var(--text-secondary);
+  --color-ink-3: var(--text-muted);
+  --color-brand: var(--brand);
+  --color-brand-contrast: var(--brand-contrast);
+  --color-good: var(--good);
+  --color-good-surface: var(--good-surface);
+  --color-warning: var(--warning);
+  --color-warning-surface: var(--warning-surface);
+  --color-critical: var(--critical);
+  --color-critical-surface: var(--critical-surface);
+  --color-info: var(--info);
+  --color-info-surface: var(--info-surface);
+  --font-sans: system-ui, -apple-system, "Segoe UI", Roboto, "Noto Sans", sans-serif;
+}
+
+body {
+  background: var(--surface-0);
+  color: var(--text-primary);
+  font-family: var(--font-sans);
+}
+
+.tabular {
+  font-variant-numeric: tabular-nums;
+}
+
+:focus-visible {
+  outline: 2px solid var(--info);
+  outline-offset: 2px;
+}

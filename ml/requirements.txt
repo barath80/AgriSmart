@@ -1,0 +1,18 @@
+# AgriSmart model training (Python 3.12). GPU users: install torch/torchvision from
+# https://pytorch.org/get-started/locally/ first, then this file.
+numpy>=1.26
+pandas>=2.2
+scikit-learn>=1.5
+xgboost>=2.1
+torch>=2.4
+torchvision>=0.19
+onnx>=1.16
+onnxscript>=0.4  # torch.export-based ONNX exporter
+onnxruntime>=1.18
+pillow>=10.4
+matplotlib>=3.9
+jupyterlab>=4.2
+ipykernel>=6.29
+pytest>=8.3
+# Contract tests import the backend's model runtime (app.ml.runtime), which needs FastAPI.
+fastapi>=0.115

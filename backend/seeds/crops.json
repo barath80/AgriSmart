@@ -1,0 +1,3578 @@
+[
+  {
+    "slug": "rice",
+    "names": {
+      "en": "Rice (Paddy)",
+      "ta": "நெல்",
+      "hi": "धान",
+      "te": "వరి",
+      "kn": "ಭತ್ತ",
+      "mr": "भात",
+      "bn": "ধান",
+      "gu": "ડાંગર",
+      "ml": "നെല്ല്",
+      "pa": "ਝੋਨਾ",
+      "or": "ଧାନ"
+    },
+    "aliases": [
+      "paddy",
+      "dhan",
+      "chawal",
+      "rice",
+      "அரிசி",
+      "चावल",
+      "బియ్యం",
+      "ಅಕ್ಕಿ",
+      "तांदूळ"
+    ],
+    "category": "cereal",
+    "seasons": [
+      "kharif"
+    ],
+    "duration_days_min": 110,
+    "duration_days_max": 150,
+    "water_requirement": "high",
+    "suitable_soils": [
+      "clay",
+      "alluvial",
+      "loamy"
+    ],
+    "fertilizer_guidance": "Typical N:P:K 100:50:50 kg/ha. Apply all P and K and a third of N at transplanting; the rest of N in two splits at tillering and panicle initiation. Add zinc sulphate where zinc is deficient. Adjust to your Soil Health Card.",
+    "yield_min_q_per_acre": 16,
+    "yield_max_q_per_acre": 28,
+    "market_commodity": "Paddy(Dhan)(Common)",
+    "calendar_template": [
+      {
+        "type": "land_preparation",
+        "key": "prepare_nursery",
+        "day": -25
+      },
+      {
+        "type": "land_preparation",
+        "key": "prepare_land",
+        "day": -5,
+        "window": 3
+      },
+      {
+        "type": "sowing",
+        "key": "transplant",
+        "day": 0
+      },
+      {
+        "type": "fertilizer",
+        "key": "basal_fertilizer",
+        "day": 0,
+        "window": 1
+      },
+      {
+        "type": "weeding",
+        "key": "first_weeding",
+        "day": 20,
+        "window": 3
+      },
+      {
+        "type": "fertilizer",
+        "key": "top_dress_nitrogen",
+        "day": 21,
+        "window": 3
+      },
+      {
+        "type": "weeding",
+        "key": "second_weeding",
+        "day": 40,
+        "window": 3
+      },
+      {
+        "type": "fertilizer",
+        "key": "second_top_dress",
+        "day": 45,
+        "window": 3
+      },
+      {
+        "type": "irrigation",
+        "key": "maintain_water",
+        "every": 7,
+        "from": 3,
+        "until": 95
+      },
+      {
+        "type": "pest_monitoring",
+        "key": "scout_pests",
+        "every": 10,
+        "from": 15,
+        "until": 90
+      },
+      {
+        "type": "disease_monitoring",
+        "key": "scout_disease",
+        "every": 10,
+        "from": 20,
+        "until": 90
+      },
+      {
+        "type": "harvest",
+        "key": "drain_field",
+        "day": 100,
+        "window": 3
+      },
+      {
+        "type": "harvest",
+        "key": "harvest_prep",
+        "day": 103,
+        "window": 7
+      },
+      {
+        "type": "harvest",
+        "key": "harvest",
+        "day": 110,
+        "window": 7
+      }
+    ],
+    "growing_states": [],
+    "min_elevation_m": null
+  },
+  {
+    "slug": "wheat",
+    "names": {
+      "en": "Wheat",
+      "ta": "கோதுமை",
+      "hi": "गेहूं",
+      "te": "గోధుమ",
+      "kn": "ಗೋಧಿ",
+      "mr": "गहू",
+      "bn": "গম",
+      "gu": "ઘઉં",
+      "ml": "ഗോതമ്പ്",
+      "pa": "ਕਣਕ",
+      "or": "ଗହମ"
+    },
+    "aliases": [
+      "gehun",
+      "gehu",
+      "wheat"
+    ],
+    "category": "cereal",
+    "seasons": [
+      "rabi"
+    ],
+    "duration_days_min": 110,
+    "duration_days_max": 140,
+    "water_requirement": "medium",
+    "suitable_soils": [
+      "alluvial",
+      "loamy",
+      "black",
+      "clay"
+    ],
+    "fertilizer_guidance": "Typical N:P:K 120:60:40 kg/ha. Apply half N with all P and K at sowing; the rest of N at first irrigation (crown root stage). Adjust to your Soil Health Card.",
+    "yield_min_q_per_acre": 14,
+    "yield_max_q_per_acre": 22,
+    "market_commodity": "Wheat",
+    "calendar_template": [
+      {
+        "type": "land_preparation",
+        "key": "prepare_land",
+        "day": -7,
+        "window": 5
+      },
+      {
+        "type": "sowing",
+        "key": "sow_seeds",
+        "day": 0
+      },
+      {
+        "type": "fertilizer",
+        "key": "basal_fertilizer",
+        "day": 0,
+        "window": 1
+      },
+      {
+        "type": "weeding",
+        "key": "first_weeding",
+        "day": 20,
+        "window": 4
+      },
+      {
+        "type": "fertilizer",
+        "key": "top_dress_nitrogen",
+        "day": 25,
+        "window": 3
+      },
+      {
+        "type": "fertilizer",
+        "key": "second_top_dress",
+        "day": 45,
+        "window": 3
+      },
+      {
+        "type": "irrigation",
+        "key": "irrigate",
+        "every": 12,
+        "from": 12,
+        "until": 95
+      },
+      {
+        "type": "pest_monitoring",
+        "key": "scout_pests",
+        "every": 14,
+        "from": 15,
+        "until": 90
+      },
+      {
+        "type": "disease_monitoring",
+        "key": "scout_disease",
+        "every": 14,
+        "from": 22,
+        "until": 90
+      },
+      {
+        "type": "harvest",
+        "key": "harvest_prep",
+        "day": 103,
+        "window": 7
+      },
+      {
+        "type": "harvest",
+        "key": "harvest",
+        "day": 110,
+        "window": 7
+      }
+    ],
+    "growing_states": [
+      "Uttar Pradesh",
+      "Punjab",
+      "Haryana",
+      "Madhya Pradesh",
+      "Rajasthan",
+      "Bihar",
+      "Gujarat",
+      "Maharashtra",
+      "Uttarakhand",
+      "Himachal Pradesh",
+      "Jammu And Kashmir",
+      "West Bengal",
+      "Jharkhand",
+      "Chhattisgarh",
+      "Delhi"
+    ],
+    "min_elevation_m": null
+  },
+  {
+    "slug": "maize",
+    "names": {
+      "en": "Maize",
+      "ta": "மக்காச்சோளம்",
+      "hi": "मक्का",
+      "te": "మొక్కజొన్న",
+      "kn": "ಮೆಕ್ಕೆಜೋಳ",
+      "mr": "मका",
+      "bn": "ভুট্টা",
+      "gu": "મકાઈ",
+      "ml": "ചോളം",
+      "pa": "ਮੱਕੀ",
+      "or": "ମକା"
+    },
+    "aliases": [
+      "corn",
+      "makka",
+      "bhutta"
+    ],
+    "category": "cereal",
+    "seasons": [
+      "kharif",
+      "rabi"
+    ],
+    "duration_days_min": 90,
+    "duration_days_max": 120,
+    "water_requirement": "medium",
+    "suitable_soils": [
+      "loamy",
+      "alluvial",
+      "red"
+    ],
+    "fertilizer_guidance": "Typical N:P:K 120:60:40 kg/ha. A third of N with all P and K at sowing; remaining N at knee-high and tasselling stages. Adjust to your Soil Health Card.",
+    "yield_min_q_per_acre": 15,
+    "yield_max_q_per_acre": 30,
+    "market_commodity": "Maize",
+    "calendar_template": [
+      {
+        "type": "land_preparation",
+        "key": "prepare_land",
+        "day": -7,
+        "window": 5
+      },
+      {
+        "type": "sowing",
+        "key": "sow_seeds",
+        "day": 0
+      },
+      {
+        "type": "fertilizer",
+        "key": "basal_fertilizer",
+        "day": 0,
+        "window": 1
+      },
+      {
+        "type": "weeding",
+        "key": "first_weeding",
+        "day": 20,
+        "window": 4
+      },
+      {
+        "type": "fertilizer",
+        "key": "top_dress_nitrogen",
+        "day": 25,
+        "window": 3
+      },
+      {
+        "type": "fertilizer",
+        "key": "second_top_dress",
+        "day": 45,
+        "window": 3
+      },
+      {
+        "type": "irrigation",
+        "key": "irrigate",
+        "every": 12,
+        "from": 12,
+        "until": 75
+      },
+      {
+        "type": "pest_monitoring",
+        "key": "scout_pests",
+        "every": 14,
+        "from": 15,
+        "until": 70
+      },
+      {
+        "type": "disease_monitoring",
+        "key": "scout_disease",
+        "every": 14,
+        "from": 22,
+        "until": 70
+      },
+      {
+        "type": "harvest",
+        "key": "harvest_prep",
+        "day": 83,
+        "window": 7
+      },
+      {
+        "type": "harvest",
+        "key": "harvest",
+        "day": 90,
+        "window": 7
+      }
+    ],
+    "growing_states": [],
+    "min_elevation_m": null
+  },
+  {
+    "slug": "bajra",
+    "names": {
+      "en": "Pearl millet (Bajra)",
+      "ta": "கம்பு",
+      "hi": "बाजरा",
+      "te": "సజ్జలు",
+      "kn": "ಸಜ್ಜೆ",
+      "mr": "बाजरी",
+      "bn": "বাজরা",
+      "gu": "બાજરી",
+      "ml": "കമ്പ്",
+      "pa": "ਬਾਜਰਾ",
+      "or": "ବାଜରା"
+    },
+    "aliases": [
+      "bajra",
+      "pearl millet",
+      "cumbu"
+    ],
+    "category": "cereal",
+    "seasons": [
+      "kharif"
+    ],
+    "duration_days_min": 75,
+    "duration_days_max": 90,
+    "water_requirement": "low",
+    "suitable_soils": [
+      "sandy",
+      "loamy",
+      "red"
+    ],
+    "fertilizer_guidance": "Typical N:P:K 60:30:30 kg/ha under irrigation, about 40:20:0 when rainfed. Half N at sowing, half about 30 days later.",
+    "yield_min_q_per_acre": 6,
+    "yield_max_q_per_acre": 10,
+    "market_commodity": "Bajra(Pearl Millet/Cumbu)",
+    "calendar_template": [
+      {
+        "type": "land_preparation",
+        "key": "prepare_land",
+        "day": -7,
+        "window": 5
+      },
+      {
+        "type": "sowing",
+        "key": "sow_seeds",
+        "day": 0
+      },
+      {
+        "type": "fertilizer",
+        "key": "basal_fertilizer",
+        "day": 0,
+        "window": 1
+      },
+      {
+        "type": "weeding",
+        "key": "first_weeding",
+        "day": 20,
+        "window": 4
+      },
+      {
+        "type": "fertilizer",
+        "key": "top_dress_nitrogen",
+        "day": 25,
+        "window": 3
+      },
+      {
+        "type": "fertilizer",
+        "key": "second_top_dress",
+        "day": 45,
+        "window": 3
+      },
+      {
+        "type": "irrigation",
+        "key": "irrigate",
+        "every": 12,
+        "from": 12,
+        "until": 60
+      },
+      {
+        "type": "pest_monitoring",
+        "key": "scout_pests",
+        "every": 14,
+        "from": 15,
+        "until": 55
+      },
+      {
+        "type": "disease_monitoring",
+        "key": "scout_disease",
+        "every": 14,
+        "from": 22,
+        "until": 55
+      },
+      {
+        "type": "harvest",
+        "key": "harvest_prep",
+        "day": 68,
+        "window": 7
+      },
+      {
+        "type": "harvest",
+        "key": "harvest",
+        "day": 75,
+        "window": 7
+      }
+    ],
+    "growing_states": [
+      "Rajasthan",
+      "Uttar Pradesh",
+      "Haryana",
+      "Gujarat",
+      "Maharashtra",
+      "Madhya Pradesh",
+      "Karnataka",
+      "Tamil Nadu",
+      "Andhra Pradesh",
+      "Telangana"
+    ],
+    "min_elevation_m": null
+  },
+  {
+    "slug": "jowar",
+    "names": {
+      "en": "Sorghum (Jowar)",
+      "ta": "சோளம்",
+      "hi": "ज्वार",
+      "te": "జొన్న",
+      "kn": "ಜೋಳ",
+      "mr": "ज्वारी",
+      "bn": "জোয়ার",
+      "gu": "જુવાર",
+      "ml": "മണിച്ചോളം",
+      "pa": "ਜਵਾਰ",
+      "or": "ଜୁଆର"
+    },
+    "aliases": [
+      "jowar",
+      "sorghum",
+      "cholam"
+    ],
+    "category": "cereal",
+    "seasons": [
+      "kharif",
+      "rabi"
+    ],
+    "duration_days_min": 100,
+    "duration_days_max": 120,
+    "water_requirement": "low",
+    "suitable_soils": [
+      "black",
+      "red",
+      "loamy"
+    ],
+    "fertilizer_guidance": "Typical N:P:K 80:40:40 kg/ha. Half N with all P and K at sowing; the rest 30 days after sowing.",
+    "yield_min_q_per_acre": 6,
+    "yield_max_q_per_acre": 10,
+    "market_commodity": "Jowar(Sorghum)",
+    "calendar_template": [
+      {
+        "type": "land_preparation",
+        "key": "prepare_land",
+        "day": -7,
+        "window": 5
+      },
+      {
+        "type": "sowing",
+        "key": "sow_seeds",
+        "day": 0
+      },
+      {
+        "type": "fertilizer",
+        "key": "basal_fertilizer",
+        "day": 0,
+        "window": 1
+      },
+      {
+        "type": "weeding",
+        "key": "first_weeding",
+        "day": 20,
+        "window": 4
+      },
+      {
+        "type": "fertilizer",
+        "key": "top_dress_nitrogen",
+        "day": 25,
+        "window": 3
+      },
+      {
+        "type": "fertilizer",
+        "key": "second_top_dress",
+        "day": 45,
+        "window": 3
+      },
+      {
+        "type": "irrigation",
+        "key": "irrigate",
+        "every": 12,
+        "from": 12,
+        "until": 85
+      },
+      {
+        "type": "pest_monitoring",
+        "key": "scout_pests",
+        "every": 14,
+        "from": 15,
+        "until": 80
+      },
+      {
+        "type": "disease_monitoring",
+        "key": "scout_disease",
+        "every": 14,
+        "from": 22,
+        "until": 80
+      },
+      {
+        "type": "harvest",
+        "key": "harvest_prep",
+        "day": 93,
+        "window": 7
+      },
+      {
+        "type": "harvest",
+        "key": "harvest",
+        "day": 100,
+        "window": 7
+      }
+    ],
+    "growing_states": [
+      "Maharashtra",
+      "Karnataka",
+      "Madhya Pradesh",
+      "Rajasthan",
+      "Telangana",
+      "Andhra Pradesh",
+      "Tamil Nadu",
+      "Gujarat",
+      "Uttar Pradesh"
+    ],
+    "min_elevation_m": null
+  },
+  {
+    "slug": "ragi",
+    "names": {
+      "en": "Finger millet (Ragi)",
+      "ta": "கேழ்வரகு",
+      "hi": "रागी",
+      "te": "రాగి",
+      "kn": "ರಾಗಿ",
+      "mr": "नाचणी",
+      "bn": "রাগি",
+      "gu": "નાગલી",
+      "ml": "റാഗി",
+      "pa": "ਰਾਗੀ",
+      "or": "ମାଣ୍ଡିଆ"
+    },
+    "aliases": [
+      "ragi",
+      "finger millet",
+      "nachni"
+    ],
+    "category": "cereal",
+    "seasons": [
+      "kharif"
+    ],
+    "duration_days_min": 100,
+    "duration_days_max": 120,
+    "water_requirement": "low",
+    "suitable_soils": [
+      "red",
+      "laterite",
+      "loamy"
+    ],
+    "fertilizer_guidance": "Typical N:P:K 60:30:30 kg/ha. Half N with all P and K at sowing; the rest 25-30 days later.",
+    "yield_min_q_per_acre": 6,
+    "yield_max_q_per_acre": 12,
+    "market_commodity": "Ragi (Finger Millet)",
+    "calendar_template": [
+      {
+        "type": "land_preparation",
+        "key": "prepare_land",
+        "day": -7,
+        "window": 5
+      },
+      {
+        "type": "sowing",
+        "key": "sow_seeds",
+        "day": 0
+      },
+      {
+        "type": "fertilizer",
+        "key": "basal_fertilizer",
+        "day": 0,
+        "window": 1
+      },
+      {
+        "type": "weeding",
+        "key": "first_weeding",
+        "day": 20,
+        "window": 4
+      },
+      {
+        "type": "fertilizer",
+        "key": "top_dress_nitrogen",
+        "day": 25,
+        "window": 3
+      },
+      {
+        "type": "fertilizer",
+        "key": "second_top_dress",
+        "day": 45,
+        "window": 3
+      },
+      {
+        "type": "irrigation",
+        "key": "irrigate",
+        "every": 12,
+        "from": 12,
+        "until": 85
+      },
+      {
+        "type": "pest_monitoring",
+        "key": "scout_pests",
+        "every": 14,
+        "from": 15,
+        "until": 80
+      },
+      {
+        "type": "disease_monitoring",
+        "key": "scout_disease",
+        "every": 14,
+        "from": 22,
+        "until": 80
+      },
+      {
+        "type": "harvest",
+        "key": "harvest_prep",
+        "day": 93,
+        "window": 7
+      },
+      {
+        "type": "harvest",
+        "key": "harvest",
+        "day": 100,
+        "window": 7
+      }
+    ],
+    "growing_states": [
+      "Karnataka",
+      "Tamil Nadu",
+      "Andhra Pradesh",
+      "Telangana",
+      "Uttarakhand",
+      "Maharashtra",
+      "Odisha",
+      "Jharkhand",
+      "Himachal Pradesh",
+      "Chhattisgarh"
+    ],
+    "min_elevation_m": null
+  },
+  {
+    "slug": "chickpea",
+    "names": {
+      "en": "Chickpea (Bengal gram)",
+      "ta": "கொண்டைக்கடலை",
+      "hi": "चना",
+      "te": "శనగ",
+      "kn": "ಕಡಲೆ",
+      "mr": "हरभरा",
+      "bn": "ছোলা",
+      "gu": "ચણા",
+      "ml": "കടല",
+      "pa": "ਛੋਲੇ",
+      "or": "ବୁଟ"
+    },
+    "aliases": [
+      "chana",
+      "gram",
+      "bengal gram",
+      "chickpea"
+    ],
+    "category": "pulse",
+    "seasons": [
+      "rabi"
+    ],
+    "duration_days_min": 90,
+    "duration_days_max": 120,
+    "water_requirement": "low",
+    "suitable_soils": [
+      "black",
+      "loamy",
+      "alluvial"
+    ],
+    "fertilizer_guidance": "Pulses fix their own nitrogen: typical N:P:K 20:40:20 kg/ha, all at sowing. Treat seed with Rhizobium culture.",
+    "yield_min_q_per_acre": 4,
+    "yield_max_q_per_acre": 8,
+    "market_commodity": "Bengal Gram(Gram)(Whole)",
+    "calendar_template": [
+      {
+        "type": "land_preparation",
+        "key": "prepare_land",
+        "day": -7,
+        "window": 5
+      },
+      {
+        "type": "sowing",
+        "key": "treat_seed",
+        "day": -1
+      },
+      {
+        "type": "sowing",
+        "key": "sow_seeds",
+        "day": 0
+      },
+      {
+        "type": "fertilizer",
+        "key": "basal_fertilizer",
+        "day": 0,
+        "window": 1
+      },
+      {
+        "type": "weeding",
+        "key": "first_weeding",
+        "day": 25,
+        "window": 4
+      },
+      {
+        "type": "irrigation",
+        "key": "irrigate",
+        "every": 20,
+        "from": 20,
+        "until": 75
+      },
+      {
+        "type": "pest_monitoring",
+        "key": "scout_pests",
+        "every": 10,
+        "from": 15,
+        "until": 70
+      },
+      {
+        "type": "disease_monitoring",
+        "key": "scout_disease",
+        "every": 10,
+        "from": 22,
+        "until": 70
+      },
+      {
+        "type": "harvest",
+        "key": "harvest_prep",
+        "day": 83,
+        "window": 7
+      },
+      {
+        "type": "harvest",
+        "key": "harvest",
+        "day": 90,
+        "window": 7
+      }
+    ],
+    "growing_states": [
+      "Madhya Pradesh",
+      "Maharashtra",
+      "Rajasthan",
+      "Uttar Pradesh",
+      "Karnataka",
+      "Andhra Pradesh",
+      "Telangana",
+      "Gujarat",
+      "Chhattisgarh",
+      "Jharkhand",
+      "Bihar",
+      "Tamil Nadu"
+    ],
+    "min_elevation_m": null
+  },
+  {
+    "slug": "kidney_beans",
+    "names": {
+      "en": "Kidney beans (Rajma)",
+      "ta": "ராஜ்மா",
+      "hi": "राजमा",
+      "te": "రాజ్మా",
+      "kn": "ರಾಜ್ಮಾ",
+      "mr": "राजमा",
+      "bn": "রাজমা",
+      "gu": "રાજમા",
+      "ml": "രാജ്മ",
+      "pa": "ਰਾਜਮਾਂਹ",
+      "or": "ରାଜମା"
+    },
+    "aliases": [
+      "rajma",
+      "kidney beans"
+    ],
+    "category": "pulse",
+    "seasons": [
+      "rabi",
+      "kharif"
+    ],
+    "duration_days_min": 90,
+    "duration_days_max": 120,
+    "water_requirement": "medium",
+    "suitable_soils": [
+      "loamy",
+      "alluvial"
+    ],
+    "fertilizer_guidance": "Rajma fixes little nitrogen: typical N:P:K 80:60:40 kg/ha, half N at sowing and half at 30 days.",
+    "yield_min_q_per_acre": 4,
+    "yield_max_q_per_acre": 8,
+    "market_commodity": null,
+    "calendar_template": [
+      {
+        "type": "land_preparation",
+        "key": "prepare_land",
+        "day": -7,
+        "window": 5
+      },
+      {
+        "type": "sowing",
+        "key": "treat_seed",
+        "day": -1
+      },
+      {
+        "type": "sowing",
+        "key": "sow_seeds",
+        "day": 0
+      },
+      {
+        "type": "fertilizer",
+        "key": "basal_fertilizer",
+        "day": 0,
+        "window": 1
+      },
+      {
+        "type": "weeding",
+        "key": "first_weeding",
+        "day": 25,
+        "window": 4
+      },
+      {
+        "type": "irrigation",
+        "key": "irrigate",
+        "every": 20,
+        "from": 20,
+        "until": 75
+      },
+      {
+        "type": "pest_monitoring",
+        "key": "scout_pests",
+        "every": 10,
+        "from": 15,
+        "until": 70
+      },
+      {
+        "type": "disease_monitoring",
+        "key": "scout_disease",
+        "every": 10,
+        "from": 22,
+        "until": 70
+      },
+      {
+        "type": "harvest",
+        "key": "harvest_prep",
+        "day": 83,
+        "window": 7
+      },
+      {
+        "type": "harvest",
+        "key": "harvest",
+        "day": 90,
+        "window": 7
+      }
+    ],
+    "growing_states": [
+      "Jammu And Kashmir",
+      "Himachal Pradesh",
+      "Uttarakhand",
+      "Maharashtra",
+      "Karnataka",
+      "Assam",
+      "Meghalaya",
+      "Mizoram",
+      "Nagaland",
+      "Sikkim",
+      "Arunachal Pradesh",
+      "Manipur",
+      "Tripura"
+    ],
+    "min_elevation_m": null
+  },
+  {
+    "slug": "pigeon_pea",
+    "names": {
+      "en": "Pigeon pea (Tur/Arhar)",
+      "ta": "துவரை",
+      "hi": "अरहर",
+      "te": "కంది",
+      "kn": "ತೊಗರಿ",
+      "mr": "तूर",
+      "bn": "অড়হর",
+      "gu": "તુવેર",
+      "ml": "തുവര",
+      "pa": "ਅਰਹਰ",
+      "or": "ହରଡ଼"
+    },
+    "aliases": [
+      "tur",
+      "toor",
+      "arhar",
+      "tuvar",
+      "pigeon pea",
+      "तुअर"
+    ],
+    "category": "pulse",
+    "seasons": [
+      "kharif"
+    ],
+    "duration_days_min": 150,
+    "duration_days_max": 200,
+    "water_requirement": "low",
+    "suitable_soils": [
+      "black",
+      "red",
+      "loamy"
+    ],
+    "fertilizer_guidance": "Typical N:P:K 20:50:20 kg/ha at sowing. Treat seed with Rhizobium and PSB cultures.",
+    "yield_min_q_per_acre": 3,
+    "yield_max_q_per_acre": 6,
+    "market_commodity": "Arhar (Tur/Red Gram)(Whole)",
+    "calendar_template": [
+      {
+        "type": "land_preparation",
+        "key": "prepare_land",
+        "day": -7,
+        "window": 5
+      },
+      {
+        "type": "sowing",
+        "key": "treat_seed",
+        "day": -1
+      },
+      {
+        "type": "sowing",
+        "key": "sow_seeds",
+        "day": 0
+      },
+      {
+        "type": "fertilizer",
+        "key": "basal_fertilizer",
+        "day": 0,
+        "window": 1
+      },
+      {
+        "type": "weeding",
+        "key": "first_weeding",
+        "day": 25,
+        "window": 4
+      },
+      {
+        "type": "irrigation",
+        "key": "irrigate",
+        "every": 20,
+        "from": 20,
+        "until": 135
+      },
+      {
+        "type": "pest_monitoring",
+        "key": "scout_pests",
+        "every": 10,
+        "from": 15,
+        "until": 130
+      },
+      {
+        "type": "disease_monitoring",
+        "key": "scout_disease",
+        "every": 10,
+        "from": 22,
+        "until": 130
+      },
+      {
+        "type": "harvest",
+        "key": "harvest_prep",
+        "day": 143,
+        "window": 7
+      },
+      {
+        "type": "harvest",
+        "key": "harvest",
+        "day": 150,
+        "window": 7
+      }
+    ],
+    "growing_states": [],
+    "min_elevation_m": null
+  },
+  {
+    "slug": "moth_bean",
+    "names": {
+      "en": "Moth bean",
+      "ta": "மோத் பயறு",
+      "hi": "मोठ",
+      "te": "మోత్ బీన్",
+      "kn": "ಮಡಕೆ ಕಾಳು",
+      "mr": "मटकी",
+      "bn": "মথ ডাল",
+      "gu": "મઠ",
+      "ml": "മോത്ത് പയർ",
+      "pa": "ਮੋਠ",
+      "or": "ମଠ"
+    },
+    "aliases": [
+      "moth",
+      "matki",
+      "moth bean"
+    ],
+    "category": "pulse",
+    "seasons": [
+      "kharif"
+    ],
+    "duration_days_min": 75,
+    "duration_days_max": 90,
+    "water_requirement": "low",
+    "suitable_soils": [
+      "sandy"
+    ],
+    "fertilizer_guidance": "Typical N:P 10:40 kg/ha at sowing. Very drought tolerant; avoid waterlogging.",
+    "yield_min_q_per_acre": 2,
+    "yield_max_q_per_acre": 4,
+    "market_commodity": null,
+    "calendar_template": [
+      {
+        "type": "land_preparation",
+        "key": "prepare_land",
+        "day": -7,
+        "window": 5
+      },
+      {
+        "type": "sowing",
+        "key": "treat_seed",
+        "day": -1
+      },
+      {
+        "type": "sowing",
+        "key": "sow_seeds",
+        "day": 0
+      },
+      {
+        "type": "fertilizer",
+        "key": "basal_fertilizer",
+        "day": 0,
+        "window": 1
+      },
+      {
+        "type": "weeding",
+        "key": "first_weeding",
+        "day": 25,
+        "window": 4
+      },
+      {
+        "type": "irrigation",
+        "key": "irrigate",
+        "every": 20,
+        "from": 20,
+        "until": 60
+      },
+      {
+        "type": "pest_monitoring",
+        "key": "scout_pests",
+        "every": 10,
+        "from": 15,
+        "until": 55
+      },
+      {
+        "type": "disease_monitoring",
+        "key": "scout_disease",
+        "every": 10,
+        "from": 22,
+        "until": 55
+      },
+      {
+        "type": "harvest",
+        "key": "harvest_prep",
+        "day": 68,
+        "window": 7
+      },
+      {
+        "type": "harvest",
+        "key": "harvest",
+        "day": 75,
+        "window": 7
+      }
+    ],
+    "growing_states": [
+      "Rajasthan",
+      "Gujarat",
+      "Maharashtra",
+      "Haryana",
+      "Madhya Pradesh"
+    ],
+    "min_elevation_m": null
+  },
+  {
+    "slug": "green_gram",
+    "names": {
+      "en": "Green gram (Moong)",
+      "ta": "பாசிப்பயறு",
+      "hi": "मूंग",
+      "te": "పెసలు",
+      "kn": "ಹೆಸರು",
+      "mr": "मूग",
+      "bn": "মুগ",
+      "gu": "મગ",
+      "ml": "ചെറുപയർ",
+      "pa": "ਮੂੰਗੀ",
+      "or": "ମୁଗ"
+    },
+    "aliases": [
+      "moong",
+      "mung",
+      "green gram",
+      "mungbean"
+    ],
+    "category": "pulse",
+    "seasons": [
+      "kharif",
+      "zaid"
+    ],
+    "duration_days_min": 60,
+    "duration_days_max": 75,
+    "water_requirement": "low",
+    "suitable_soils": [
+      "loamy",
+      "sandy",
+      "red"
+    ],
+    "fertilizer_guidance": "Typical N:P:K 20:40:20 kg/ha, all at sowing. Treat seed with Rhizobium culture.",
+    "yield_min_q_per_acre": 2.5,
+    "yield_max_q_per_acre": 4.5,
+    "market_commodity": "Green Gram (Moong)(Whole)",
+    "calendar_template": [
+      {
+        "type": "land_preparation",
+        "key": "prepare_land",
+        "day": -7,
+        "window": 5
+      },
+      {
+        "type": "sowing",
+        "key": "treat_seed",
+        "day": -1
+      },
+      {
+        "type": "sowing",
+        "key": "sow_seeds",
+        "day": 0
+      },
+      {
+        "type": "fertilizer",
+        "key": "basal_fertilizer",
+        "day": 0,
+        "window": 1
+      },
+      {
+        "type": "weeding",
+        "key": "first_weeding",
+        "day": 25,
+        "window": 4
+      },
+      {
+        "type": "irrigation",
+        "key": "irrigate",
+        "every": 20,
+        "from": 20,
+        "until": 45
+      },
+      {
+        "type": "pest_monitoring",
+        "key": "scout_pests",
+        "every": 10,
+        "from": 15,
+        "until": 40
+      },
+      {
+        "type": "disease_monitoring",
+        "key": "scout_disease",
+        "every": 10,
+        "from": 22,
+        "until": 40
+      },
+      {
+        "type": "harvest",
+        "key": "harvest_prep",
+        "day": 53,
+        "window": 7
+      },
+      {
+        "type": "harvest",
+        "key": "harvest",
+        "day": 60,
+        "window": 7
+      }
+    ],
+    "growing_states": [],
+    "min_elevation_m": null
+  },
+  {
+    "slug": "black_gram",
+    "names": {
+      "en": "Black gram (Urad)",
+      "ta": "உளுந்து",
+      "hi": "उड़द",
+      "te": "మినుములు",
+      "kn": "ಉದ್ದು",
+      "mr": "उडीद",
+      "bn": "মাষকলাই",
+      "gu": "અડદ",
+      "ml": "ഉഴുന്ന്",
+      "pa": "ਮਾਂਹ",
+      "or": "ବିରି"
+    },
+    "aliases": [
+      "urad",
+      "urd",
+      "black gram",
+      "ulundu"
+    ],
+    "category": "pulse",
+    "seasons": [
+      "kharif",
+      "rabi"
+    ],
+    "duration_days_min": 70,
+    "duration_days_max": 90,
+    "water_requirement": "low",
+    "suitable_soils": [
+      "black",
+      "loamy",
+      "clay"
+    ],
+    "fertilizer_guidance": "Typical N:P:K 20:40:20 kg/ha, all at sowing. Treat seed with Rhizobium culture.",
+    "yield_min_q_per_acre": 3,
+    "yield_max_q_per_acre": 5,
+    "market_commodity": "Black Gram (Urd Beans)(Whole)",
+    "calendar_template": [
+      {
+        "type": "land_preparation",
+        "key": "prepare_land",
+        "day": -7,
+        "window": 5
+      },
+      {
+        "type": "sowing",
+        "key": "treat_seed",
+        "day": -1
+      },
+      {
+        "type": "sowing",
+        "key": "sow_seeds",
+        "day": 0
+      },
+      {
+        "type": "fertilizer",
+        "key": "basal_fertilizer",
+        "day": 0,
+        "window": 1
+      },
+      {
+        "type": "weeding",
+        "key": "first_weeding",
+        "day": 25,
+        "window": 4
+      },
+      {
+        "type": "irrigation",
+        "key": "irrigate",
+        "every": 20,
+        "from": 20,
+        "until": 55
+      },
+      {
+        "type": "pest_monitoring",
+        "key": "scout_pests",
+        "every": 10,
+        "from": 15,
+        "until": 50
+      },
+      {
+        "type": "disease_monitoring",
+        "key": "scout_disease",
+        "every": 10,
+        "from": 22,
+        "until": 50
+      },
+      {
+        "type": "harvest",
+        "key": "harvest_prep",
+        "day": 63,
+        "window": 7
+      },
+      {
+        "type": "harvest",
+        "key": "harvest",
+        "day": 70,
+        "window": 7
+      }
+    ],
+    "growing_states": [],
+    "min_elevation_m": null
+  },
+  {
+    "slug": "lentil",
+    "names": {
+      "en": "Lentil (Masoor)",
+      "ta": "மசூர் பருப்பு",
+      "hi": "मसूर",
+      "te": "మసూర్ పప్పు",
+      "kn": "ಮಸೂರ್ ಬೇಳೆ",
+      "mr": "मसूर",
+      "bn": "মসুর",
+      "gu": "મસૂર",
+      "ml": "ചുവന്ന പരിപ്പ്",
+      "pa": "ਮਸਰ",
+      "or": "ମସୁର"
+    },
+    "aliases": [
+      "masoor",
+      "masur",
+      "lentil"
+    ],
+    "category": "pulse",
+    "seasons": [
+      "rabi"
+    ],
+    "duration_days_min": 110,
+    "duration_days_max": 130,
+    "water_requirement": "low",
+    "suitable_soils": [
+      "loamy",
+      "alluvial",
+      "clay"
+    ],
+    "fertilizer_guidance": "Typical N:P:K 20:40:20 kg/ha, all at sowing.",
+    "yield_min_q_per_acre": 3,
+    "yield_max_q_per_acre": 6,
+    "market_commodity": "Lentil (Masur)(Whole)",
+    "calendar_template": [
+      {
+        "type": "land_preparation",
+        "key": "prepare_land",
+        "day": -7,
+        "window": 5
+      },
+      {
+        "type": "sowing",
+        "key": "treat_seed",
+        "day": -1
+      },
+      {
+        "type": "sowing",
+        "key": "sow_seeds",
+        "day": 0
+      },
+      {
+        "type": "fertilizer",
+        "key": "basal_fertilizer",
+        "day": 0,
+        "window": 1
+      },
+      {
+        "type": "weeding",
+        "key": "first_weeding",
+        "day": 25,
+        "window": 4
+      },
+      {
+        "type": "irrigation",
+        "key": "irrigate",
+        "every": 20,
+        "from": 20,
+        "until": 95
+      },
+      {
+        "type": "pest_monitoring",
+        "key": "scout_pests",
+        "every": 10,
+        "from": 15,
+        "until": 90
+      },
+      {
+        "type": "disease_monitoring",
+        "key": "scout_disease",
+        "every": 10,
+        "from": 22,
+        "until": 90
+      },
+      {
+        "type": "harvest",
+        "key": "harvest_prep",
+        "day": 103,
+        "window": 7
+      },
+      {
+        "type": "harvest",
+        "key": "harvest",
+        "day": 110,
+        "window": 7
+      }
+    ],
+    "growing_states": [
+      "Uttar Pradesh",
+      "Madhya Pradesh",
+      "Bihar",
+      "West Bengal",
+      "Jharkhand",
+      "Rajasthan",
+      "Assam",
+      "Chhattisgarh",
+      "Uttarakhand"
+    ],
+    "min_elevation_m": null
+  },
+  {
+    "slug": "groundnut",
+    "names": {
+      "en": "Groundnut",
+      "ta": "நிலக்கடலை",
+      "hi": "मूंगफली",
+      "te": "వేరుశనగ",
+      "kn": "ಕಡಲೆಕಾಯಿ",
+      "mr": "भुईमूग",
+      "bn": "চিনাবাদাম",
+      "gu": "મગફળી",
+      "ml": "നിലക്കടല",
+      "pa": "ਮੂੰਗਫਲੀ",
+      "or": "ଚିନାବାଦାମ"
+    },
+    "aliases": [
+      "peanut",
+      "groundnut",
+      "moongphali",
+      "verkadalai"
+    ],
+    "category": "oilseed",
+    "seasons": [
+      "kharif",
+      "rabi"
+    ],
+    "duration_days_min": 100,
+    "duration_days_max": 130,
+    "water_requirement": "low",
+    "suitable_soils": [
+      "sandy",
+      "red",
+      "loamy"
+    ],
+    "fertilizer_guidance": "Typical N:P:K 25:50:45 kg/ha at sowing. Apply gypsum (about 400 kg/ha) at flowering for calcium and sulphur.",
+    "yield_min_q_per_acre": 6,
+    "yield_max_q_per_acre": 12,
+    "market_commodity": "Groundnut",
+    "calendar_template": [
+      {
+        "type": "land_preparation",
+        "key": "prepare_land",
+        "day": -7,
+        "window": 5
+      },
+      {
+        "type": "sowing",
+        "key": "sow_seeds",
+        "day": 0
+      },
+      {
+        "type": "fertilizer",
+        "key": "basal_fertilizer",
+        "day": 0,
+        "window": 1
+      },
+      {
+        "type": "weeding",
+        "key": "first_weeding",
+        "day": 20,
+        "window": 4
+      },
+      {
+        "type": "weeding",
+        "key": "second_weeding",
+        "day": 40,
+        "window": 4
+      },
+      {
+        "type": "fertilizer",
+        "key": "apply_gypsum",
+        "day": 40,
+        "window": 5
+      },
+      {
+        "type": "irrigation",
+        "key": "irrigate",
+        "every": 12,
+        "from": 12,
+        "until": 85
+      },
+      {
+        "type": "pest_monitoring",
+        "key": "scout_pests",
+        "every": 14,
+        "from": 15,
+        "until": 80
+      },
+      {
+        "type": "disease_monitoring",
+        "key": "scout_disease",
+        "every": 14,
+        "from": 22,
+        "until": 80
+      },
+      {
+        "type": "harvest",
+        "key": "harvest_prep",
+        "day": 93,
+        "window": 7
+      },
+      {
+        "type": "harvest",
+        "key": "harvest",
+        "day": 100,
+        "window": 7
+      }
+    ],
+    "growing_states": [
+      "Gujarat",
+      "Rajasthan",
+      "Tamil Nadu",
+      "Andhra Pradesh",
+      "Telangana",
+      "Karnataka",
+      "Maharashtra",
+      "Madhya Pradesh",
+      "Odisha",
+      "Uttar Pradesh",
+      "West Bengal"
+    ],
+    "min_elevation_m": null
+  },
+  {
+    "slug": "soybean",
+    "names": {
+      "en": "Soybean",
+      "ta": "சோயாபீன்",
+      "hi": "सोयाबीन",
+      "te": "సోయాబీన్",
+      "kn": "ಸೋಯಾಬೀನ್",
+      "mr": "सोयाबीन",
+      "bn": "সয়াবিন",
+      "gu": "સોયાબીન",
+      "ml": "സോയാബീൻ",
+      "pa": "ਸੋਇਆਬੀਨ",
+      "or": "ସୋୟାବିନ"
+    },
+    "aliases": [
+      "soya",
+      "soybean",
+      "soyabean"
+    ],
+    "category": "oilseed",
+    "seasons": [
+      "kharif"
+    ],
+    "duration_days_min": 90,
+    "duration_days_max": 110,
+    "water_requirement": "medium",
+    "suitable_soils": [
+      "black",
+      "loamy"
+    ],
+    "fertilizer_guidance": "Typical N:P:K 30:60:40 kg/ha plus 20 kg sulphur, all at sowing. Treat seed with Rhizobium culture.",
+    "yield_min_q_per_acre": 5,
+    "yield_max_q_per_acre": 10,
+    "market_commodity": "Soyabean",
+    "calendar_template": [
+      {
+        "type": "land_preparation",
+        "key": "prepare_land",
+        "day": -7,
+        "window": 5
+      },
+      {
+        "type": "sowing",
+        "key": "sow_seeds",
+        "day": 0
+      },
+      {
+        "type": "fertilizer",
+        "key": "basal_fertilizer",
+        "day": 0,
+        "window": 1
+      },
+      {
+        "type": "weeding",
+        "key": "first_weeding",
+        "day": 20,
+        "window": 4
+      },
+      {
+        "type": "weeding",
+        "key": "second_weeding",
+        "day": 40,
+        "window": 4
+      },
+      {
+        "type": "irrigation",
+        "key": "irrigate",
+        "every": 15,
+        "from": 15,
+        "until": 75
+      },
+      {
+        "type": "pest_monitoring",
+        "key": "scout_pests",
+        "every": 14,
+        "from": 15,
+        "until": 70
+      },
+      {
+        "type": "disease_monitoring",
+        "key": "scout_disease",
+        "every": 14,
+        "from": 22,
+        "until": 70
+      },
+      {
+        "type": "harvest",
+        "key": "harvest_prep",
+        "day": 83,
+        "window": 7
+      },
+      {
+        "type": "harvest",
+        "key": "harvest",
+        "day": 90,
+        "window": 7
+      }
+    ],
+    "growing_states": [
+      "Madhya Pradesh",
+      "Maharashtra",
+      "Rajasthan",
+      "Karnataka",
+      "Telangana",
+      "Gujarat",
+      "Chhattisgarh"
+    ],
+    "min_elevation_m": null
+  },
+  {
+    "slug": "mustard",
+    "names": {
+      "en": "Mustard",
+      "ta": "கடுகு",
+      "hi": "सरसों",
+      "te": "ఆవాలు",
+      "kn": "ಸಾಸಿವೆ",
+      "mr": "मोहरी",
+      "bn": "সরিষা",
+      "gu": "રાઈ",
+      "ml": "കടുക്",
+      "pa": "ਸਰ੍ਹੋਂ",
+      "or": "ସୋରିଷ"
+    },
+    "aliases": [
+      "sarson",
+      "mustard",
+      "rai"
+    ],
+    "category": "oilseed",
+    "seasons": [
+      "rabi"
+    ],
+    "duration_days_min": 110,
+    "duration_days_max": 140,
+    "water_requirement": "low",
+    "suitable_soils": [
+      "alluvial",
+      "loamy",
+      "sandy"
+    ],
+    "fertilizer_guidance": "Typical N:P:K 80:40:40 kg/ha plus 40 kg sulphur. Half N at sowing, half at first irrigation.",
+    "yield_min_q_per_acre": 5,
+    "yield_max_q_per_acre": 8,
+    "market_commodity": "Mustard",
+    "calendar_template": [
+      {
+        "type": "land_preparation",
+        "key": "prepare_land",
+        "day": -7,
+        "window": 5
+      },
+      {
+        "type": "sowing",
+        "key": "sow_seeds",
+        "day": 0
+      },
+      {
+        "type": "fertilizer",
+        "key": "basal_fertilizer",
+        "day": 0,
+        "window": 1
+      },
+      {
+        "type": "weeding",
+        "key": "first_weeding",
+        "day": 20,
+        "window": 4
+      },
+      {
+        "type": "weeding",
+        "key": "second_weeding",
+        "day": 40,
+        "window": 4
+      },
+      {
+        "type": "irrigation",
+        "key": "irrigate",
+        "every": 15,
+        "from": 15,
+        "until": 95
+      },
+      {
+        "type": "pest_monitoring",
+        "key": "scout_pests",
+        "every": 14,
+        "from": 15,
+        "until": 90
+      },
+      {
+        "type": "disease_monitoring",
+        "key": "scout_disease",
+        "every": 14,
+        "from": 22,
+        "until": 90
+      },
+      {
+        "type": "harvest",
+        "key": "harvest_prep",
+        "day": 103,
+        "window": 7
+      },
+      {
+        "type": "harvest",
+        "key": "harvest",
+        "day": 110,
+        "window": 7
+      }
+    ],
+    "growing_states": [
+      "Rajasthan",
+      "Uttar Pradesh",
+      "Haryana",
+      "Madhya Pradesh",
+      "Gujarat",
+      "West Bengal",
+      "Assam",
+      "Bihar",
+      "Punjab",
+      "Jharkhand"
+    ],
+    "min_elevation_m": null
+  },
+  {
+    "slug": "cotton",
+    "names": {
+      "en": "Cotton",
+      "ta": "பருத்தி",
+      "hi": "कपास",
+      "te": "పత్తి",
+      "kn": "ಹತ್ತಿ",
+      "mr": "कापूस",
+      "bn": "তুলা",
+      "gu": "કપાસ",
+      "ml": "പരുത്തി",
+      "pa": "ਕਪਾਹ",
+      "or": "କପା"
+    },
+    "aliases": [
+      "kapas",
+      "cotton",
+      "narma"
+    ],
+    "category": "fibre",
+    "seasons": [
+      "kharif"
+    ],
+    "duration_days_min": 150,
+    "duration_days_max": 180,
+    "water_requirement": "medium",
+    "suitable_soils": [
+      "black",
+      "alluvial"
+    ],
+    "fertilizer_guidance": "Typical N:P:K 100:50:50 kg/ha for hybrids; N in three splits (sowing, square formation, flowering). Adjust to your Soil Health Card.",
+    "yield_min_q_per_acre": 6,
+    "yield_max_q_per_acre": 12,
+    "market_commodity": "Cotton",
+    "calendar_template": [
+      {
+        "type": "land_preparation",
+        "key": "prepare_land",
+        "day": -7,
+        "window": 5
+      },
+      {
+        "type": "sowing",
+        "key": "sow_seeds",
+        "day": 0
+      },
+      {
+        "type": "fertilizer",
+        "key": "basal_fertilizer",
+        "day": 0,
+        "window": 1
+      },
+      {
+        "type": "weeding",
+        "key": "first_weeding",
+        "day": 20,
+        "window": 4
+      },
+      {
+        "type": "fertilizer",
+        "key": "top_dress_nitrogen",
+        "day": 30,
+        "window": 3
+      },
+      {
+        "type": "fertilizer",
+        "key": "second_top_dress",
+        "day": 60,
+        "window": 3
+      },
+      {
+        "type": "weeding",
+        "key": "second_weeding",
+        "day": 45,
+        "window": 4
+      },
+      {
+        "type": "irrigation",
+        "key": "irrigate",
+        "every": 15,
+        "from": 15,
+        "until": 135
+      },
+      {
+        "type": "pest_monitoring",
+        "key": "scout_pests",
+        "every": 10,
+        "from": 15,
+        "until": 130
+      },
+      {
+        "type": "disease_monitoring",
+        "key": "scout_disease",
+        "every": 10,
+        "from": 22,
+        "until": 130
+      },
+      {
+        "type": "harvest",
+        "key": "harvest_prep",
+        "day": 143,
+        "window": 7
+      },
+      {
+        "type": "harvest",
+        "key": "harvest",
+        "day": 150,
+        "window": 7
+      }
+    ],
+    "growing_states": [
+      "Gujarat",
+      "Maharashtra",
+      "Telangana",
+      "Karnataka",
+      "Andhra Pradesh",
+      "Madhya Pradesh",
+      "Haryana",
+      "Rajasthan",
+      "Punjab",
+      "Tamil Nadu",
+      "Odisha"
+    ],
+    "min_elevation_m": null
+  },
+  {
+    "slug": "jute",
+    "names": {
+      "en": "Jute",
+      "ta": "சணல்",
+      "hi": "जूट",
+      "te": "జనపనార",
+      "kn": "ಸೆಣಬು",
+      "mr": "ताग",
+      "bn": "পাট",
+      "gu": "શણ",
+      "ml": "ചണം",
+      "pa": "ਪਟਸਨ",
+      "or": "ଝୋଟ"
+    },
+    "aliases": [
+      "jute",
+      "pat"
+    ],
+    "category": "fibre",
+    "seasons": [
+      "kharif"
+    ],
+    "duration_days_min": 120,
+    "duration_days_max": 150,
+    "water_requirement": "high",
+    "suitable_soils": [
+      "alluvial",
+      "loamy"
+    ],
+    "fertilizer_guidance": "Typical N:P:K 60:30:30 kg/ha; half N at sowing, the rest in two splits at 3 and 6 weeks.",
+    "yield_min_q_per_acre": 8,
+    "yield_max_q_per_acre": 12,
+    "market_commodity": "Jute",
+    "calendar_template": [
+      {
+        "type": "land_preparation",
+        "key": "prepare_land",
+        "day": -7,
+        "window": 5
+      },
+      {
+        "type": "sowing",
+        "key": "sow_seeds",
+        "day": 0
+      },
+      {
+        "type": "fertilizer",
+        "key": "basal_fertilizer",
+        "day": 0,
+        "window": 1
+      },
+      {
+        "type": "weeding",
+        "key": "first_weeding",
+        "day": 20,
+        "window": 4
+      },
+      {
+        "type": "fertilizer",
+        "key": "top_dress_nitrogen",
+        "day": 25,
+        "window": 3
+      },
+      {
+        "type": "fertilizer",
+        "key": "second_top_dress",
+        "day": 45,
+        "window": 3
+      },
+      {
+        "type": "irrigation",
+        "key": "irrigate",
+        "every": 12,
+        "from": 12,
+        "until": 105
+      },
+      {
+        "type": "pest_monitoring",
+        "key": "scout_pests",
+        "every": 14,
+        "from": 15,
+        "until": 100
+      },
+      {
+        "type": "disease_monitoring",
+        "key": "scout_disease",
+        "every": 14,
+        "from": 22,
+        "until": 100
+      },
+      {
+        "type": "harvest",
+        "key": "harvest_prep",
+        "day": 113,
+        "window": 7
+      },
+      {
+        "type": "harvest",
+        "key": "harvest",
+        "day": 120,
+        "window": 7
+      }
+    ],
+    "growing_states": [
+      "West Bengal",
+      "Bihar",
+      "Assam",
+      "Odisha",
+      "Meghalaya",
+      "Andhra Pradesh",
+      "Tripura"
+    ],
+    "min_elevation_m": null
+  },
+  {
+    "slug": "sugarcane",
+    "names": {
+      "en": "Sugarcane",
+      "ta": "கரும்பு",
+      "hi": "गन्ना",
+      "te": "చెరకు",
+      "kn": "ಕಬ್ಬು",
+      "mr": "ऊस",
+      "bn": "আখ",
+      "gu": "શેરડી",
+      "ml": "കരിമ്പ്",
+      "pa": "ਗੰਨਾ",
+      "or": "ଆଖୁ"
+    },
+    "aliases": [
+      "ganna",
+      "sugarcane",
+      "oos",
+      "karumbu"
+    ],
+    "category": "cash",
+    "seasons": [
+      "whole_year"
+    ],
+    "duration_days_min": 300,
+    "duration_days_max": 365,
+    "water_requirement": "high",
+    "suitable_soils": [
+      "alluvial",
+      "black",
+      "loamy"
+    ],
+    "fertilizer_guidance": "Typical N:P:K 250:100:120 kg/ha. All P and K at planting; N in three to four splits up to 120 days.",
+    "yield_min_q_per_acre": 300,
+    "yield_max_q_per_acre": 450,
+    "market_commodity": null,
+    "calendar_template": [
+      {
+        "type": "land_preparation",
+        "key": "prepare_land",
+        "day": -7,
+        "window": 5
+      },
+      {
+        "type": "sowing",
+        "key": "sow_seeds",
+        "day": 0
+      },
+      {
+        "type": "fertilizer",
+        "key": "basal_fertilizer",
+        "day": 0,
+        "window": 1
+      },
+      {
+        "type": "weeding",
+        "key": "first_weeding",
+        "day": 20,
+        "window": 4
+      },
+      {
+        "type": "fertilizer",
+        "key": "top_dress_nitrogen",
+        "day": 45,
+        "window": 3
+      },
+      {
+        "type": "fertilizer",
+        "key": "second_top_dress",
+        "day": 90,
+        "window": 3
+      },
+      {
+        "type": "weeding",
+        "key": "earthing_up",
+        "day": 120,
+        "window": 7
+      },
+      {
+        "type": "irrigation",
+        "key": "irrigate",
+        "every": 10,
+        "from": 10,
+        "until": 285
+      },
+      {
+        "type": "pest_monitoring",
+        "key": "scout_pests",
+        "every": 21,
+        "from": 15,
+        "until": 280
+      },
+      {
+        "type": "disease_monitoring",
+        "key": "scout_disease",
+        "every": 21,
+        "from": 22,
+        "until": 280
+      },
+      {
+        "type": "harvest",
+        "key": "harvest_prep",
+        "day": 293,
+        "window": 7
+      },
+      {
+        "type": "harvest",
+        "key": "harvest",
+        "day": 300,
+        "window": 7
+      }
+    ],
+    "growing_states": [
+      "Uttar Pradesh",
+      "Maharashtra",
+      "Karnataka",
+      "Tamil Nadu",
+      "Bihar",
+      "Gujarat",
+      "Haryana",
+      "Punjab",
+      "Andhra Pradesh",
+      "Telangana",
+      "Uttarakhand",
+      "Madhya Pradesh"
+    ],
+    "min_elevation_m": null
+  },
+  {
+    "slug": "onion",
+    "names": {
+      "en": "Onion",
+      "ta": "வெங்காயம்",
+      "hi": "प्याज",
+      "te": "ఉల్లిపాయ",
+      "kn": "ಈರುಳ್ಳಿ",
+      "mr": "कांदा",
+      "bn": "পেঁয়াজ",
+      "gu": "ડુંગળી",
+      "ml": "ഉള്ളി",
+      "pa": "ਪਿਆਜ਼",
+      "or": "ପିଆଜ"
+    },
+    "aliases": [
+      "pyaz",
+      "kanda",
+      "onion"
+    ],
+    "category": "vegetable",
+    "seasons": [
+      "rabi",
+      "kharif"
+    ],
+    "duration_days_min": 100,
+    "duration_days_max": 140,
+    "water_requirement": "medium",
+    "suitable_soils": [
+      "loamy",
+      "alluvial",
+      "red"
+    ],
+    "fertilizer_guidance": "Typical N:P:K 100:50:50 kg/ha plus sulphur. Half N at transplanting, the rest at 30 and 45 days. Stop irrigation 2 weeks before harvest.",
+    "yield_min_q_per_acre": 80,
+    "yield_max_q_per_acre": 120,
+    "market_commodity": "Onion",
+    "calendar_template": [
+      {
+        "type": "land_preparation",
+        "key": "prepare_land",
+        "day": -7,
+        "window": 5
+      },
+      {
+        "type": "sowing",
+        "key": "transplant",
+        "day": 0
+      },
+      {
+        "type": "fertilizer",
+        "key": "basal_fertilizer",
+        "day": 0,
+        "window": 1
+      },
+      {
+        "type": "weeding",
+        "key": "first_weeding",
+        "day": 20,
+        "window": 4
+      },
+      {
+        "type": "fertilizer",
+        "key": "top_dress_nitrogen",
+        "day": 30,
+        "window": 3
+      },
+      {
+        "type": "fertilizer",
+        "key": "second_top_dress",
+        "day": 50,
+        "window": 3
+      },
+      {
+        "type": "weeding",
+        "key": "second_weeding",
+        "day": 40,
+        "window": 4
+      },
+      {
+        "type": "irrigation",
+        "key": "irrigate",
+        "every": 7,
+        "from": 7,
+        "until": 85
+      },
+      {
+        "type": "pest_monitoring",
+        "key": "scout_pests",
+        "every": 7,
+        "from": 15,
+        "until": 80
+      },
+      {
+        "type": "disease_monitoring",
+        "key": "scout_disease",
+        "every": 7,
+        "from": 22,
+        "until": 80
+      },
+      {
+        "type": "harvest",
+        "key": "harvest_prep",
+        "day": 93,
+        "window": 7
+      },
+      {
+        "type": "harvest",
+        "key": "harvest",
+        "day": 100,
+        "window": 7
+      }
+    ],
+    "growing_states": [],
+    "min_elevation_m": null
+  },
+  {
+    "slug": "potato",
+    "names": {
+      "en": "Potato",
+      "ta": "உருளைக்கிழங்கு",
+      "hi": "आलू",
+      "te": "బంగాళాదుంప",
+      "kn": "ಆಲೂಗಡ್ಡೆ",
+      "mr": "बटाटा",
+      "bn": "আলু",
+      "gu": "બટાકા",
+      "ml": "ഉരുളക്കിഴങ്ങ്",
+      "pa": "ਆਲੂ",
+      "or": "ଆଳୁ"
+    },
+    "aliases": [
+      "aloo",
+      "batata",
+      "potato"
+    ],
+    "category": "vegetable",
+    "seasons": [
+      "rabi"
+    ],
+    "duration_days_min": 90,
+    "duration_days_max": 120,
+    "water_requirement": "medium",
+    "suitable_soils": [
+      "loamy",
+      "alluvial",
+      "sandy"
+    ],
+    "fertilizer_guidance": "Typical N:P:K 150:80:100 kg/ha. Half N with all P and K at planting; the rest at earthing up (about 30 days).",
+    "yield_min_q_per_acre": 80,
+    "yield_max_q_per_acre": 120,
+    "market_commodity": "Potato",
+    "calendar_template": [
+      {
+        "type": "land_preparation",
+        "key": "prepare_land",
+        "day": -7,
+        "window": 5
+      },
+      {
+        "type": "sowing",
+        "key": "transplant",
+        "day": 0
+      },
+      {
+        "type": "fertilizer",
+        "key": "basal_fertilizer",
+        "day": 0,
+        "window": 1
+      },
+      {
+        "type": "weeding",
+        "key": "first_weeding",
+        "day": 20,
+        "window": 4
+      },
+      {
+        "type": "fertilizer",
+        "key": "top_dress_nitrogen",
+        "day": 30,
+        "window": 3
+      },
+      {
+        "type": "fertilizer",
+        "key": "second_top_dress",
+        "day": 50,
+        "window": 3
+      },
+      {
+        "type": "weeding",
+        "key": "second_weeding",
+        "day": 40,
+        "window": 4
+      },
+      {
+        "type": "irrigation",
+        "key": "irrigate",
+        "every": 7,
+        "from": 7,
+        "until": 75
+      },
+      {
+        "type": "pest_monitoring",
+        "key": "scout_pests",
+        "every": 7,
+        "from": 15,
+        "until": 70
+      },
+      {
+        "type": "disease_monitoring",
+        "key": "scout_disease",
+        "every": 7,
+        "from": 22,
+        "until": 70
+      },
+      {
+        "type": "harvest",
+        "key": "harvest_prep",
+        "day": 83,
+        "window": 7
+      },
+      {
+        "type": "harvest",
+        "key": "harvest",
+        "day": 90,
+        "window": 7
+      }
+    ],
+    "growing_states": [],
+    "min_elevation_m": null
+  },
+  {
+    "slug": "tomato",
+    "names": {
+      "en": "Tomato",
+      "ta": "தக்காளி",
+      "hi": "टमाटर",
+      "te": "టమాటా",
+      "kn": "ಟೊಮೆಟೊ",
+      "mr": "टोमॅटो",
+      "bn": "টমেটো",
+      "gu": "ટામેટા",
+      "ml": "തക്കാളി",
+      "pa": "ਟਮਾਟਰ",
+      "or": "ଟମାଟୋ"
+    },
+    "aliases": [
+      "tamatar",
+      "tomato",
+      "thakkali"
+    ],
+    "category": "vegetable",
+    "seasons": [
+      "rabi",
+      "kharif",
+      "zaid"
+    ],
+    "duration_days_min": 90,
+    "duration_days_max": 120,
+    "water_requirement": "medium",
+    "suitable_soils": [
+      "loamy",
+      "red",
+      "alluvial",
+      "black"
+    ],
+    "fertilizer_guidance": "Typical N:P:K 120:60:60 kg/ha (more for hybrids). Half N at transplanting; the rest at 30 and 50 days. Calcium helps prevent blossom-end rot.",
+    "yield_min_q_per_acre": 100,
+    "yield_max_q_per_acre": 200,
+    "market_commodity": "Tomato",
+    "calendar_template": [
+      {
+        "type": "land_preparation",
+        "key": "prepare_land",
+        "day": -7,
+        "window": 5
+      },
+      {
+        "type": "sowing",
+        "key": "transplant",
+        "day": 0
+      },
+      {
+        "type": "fertilizer",
+        "key": "basal_fertilizer",
+        "day": 0,
+        "window": 1
+      },
+      {
+        "type": "weeding",
+        "key": "first_weeding",
+        "day": 20,
+        "window": 4
+      },
+      {
+        "type": "fertilizer",
+        "key": "top_dress_nitrogen",
+        "day": 30,
+        "window": 3
+      },
+      {
+        "type": "fertilizer",
+        "key": "second_top_dress",
+        "day": 50,
+        "window": 3
+      },
+      {
+        "type": "weeding",
+        "key": "second_weeding",
+        "day": 40,
+        "window": 4
+      },
+      {
+        "type": "irrigation",
+        "key": "irrigate",
+        "every": 7,
+        "from": 7,
+        "until": 75
+      },
+      {
+        "type": "pest_monitoring",
+        "key": "scout_pests",
+        "every": 7,
+        "from": 15,
+        "until": 70
+      },
+      {
+        "type": "disease_monitoring",
+        "key": "scout_disease",
+        "every": 7,
+        "from": 22,
+        "until": 70
+      },
+      {
+        "type": "harvest",
+        "key": "harvest_prep",
+        "day": 83,
+        "window": 7
+      },
+      {
+        "type": "harvest",
+        "key": "harvest",
+        "day": 90,
+        "window": 7
+      }
+    ],
+    "growing_states": [],
+    "min_elevation_m": null
+  },
+  {
+    "slug": "watermelon",
+    "names": {
+      "en": "Watermelon",
+      "ta": "தர்பூசணி",
+      "hi": "तरबूज",
+      "te": "పుచ్చకాయ",
+      "kn": "ಕಲ್ಲಂಗಡಿ",
+      "mr": "कलिंगड",
+      "bn": "তরমুজ",
+      "gu": "તરબૂચ",
+      "ml": "തണ്ണിമത്തൻ",
+      "pa": "ਤਰਬੂਜ਼",
+      "or": "ତରଭୁଜ"
+    },
+    "aliases": [
+      "tarbooj",
+      "watermelon"
+    ],
+    "category": "vegetable",
+    "seasons": [
+      "zaid"
+    ],
+    "duration_days_min": 80,
+    "duration_days_max": 100,
+    "water_requirement": "medium",
+    "suitable_soils": [
+      "sandy",
+      "loamy"
+    ],
+    "fertilizer_guidance": "Typical N:P:K 100:60:60 kg/ha; half N at sowing, half at vine spread.",
+    "yield_min_q_per_acre": 80,
+    "yield_max_q_per_acre": 160,
+    "market_commodity": "Water Melon",
+    "calendar_template": [
+      {
+        "type": "land_preparation",
+        "key": "prepare_land",
+        "day": -7,
+        "window": 5
+      },
+      {
+        "type": "sowing",
+        "key": "transplant",
+        "day": 0
+      },
+      {
+        "type": "fertilizer",
+        "key": "basal_fertilizer",
+        "day": 0,
+        "window": 1
+      },
+      {
+        "type": "weeding",
+        "key": "first_weeding",
+        "day": 20,
+        "window": 4
+      },
+      {
+        "type": "fertilizer",
+        "key": "top_dress_nitrogen",
+        "day": 30,
+        "window": 3
+      },
+      {
+        "type": "fertilizer",
+        "key": "second_top_dress",
+        "day": 50,
+        "window": 3
+      },
+      {
+        "type": "weeding",
+        "key": "second_weeding",
+        "day": 40,
+        "window": 4
+      },
+      {
+        "type": "irrigation",
+        "key": "irrigate",
+        "every": 7,
+        "from": 7,
+        "until": 65
+      },
+      {
+        "type": "pest_monitoring",
+        "key": "scout_pests",
+        "every": 7,
+        "from": 15,
+        "until": 60
+      },
+      {
+        "type": "disease_monitoring",
+        "key": "scout_disease",
+        "every": 7,
+        "from": 22,
+        "until": 60
+      },
+      {
+        "type": "harvest",
+        "key": "harvest_prep",
+        "day": 73,
+        "window": 7
+      },
+      {
+        "type": "harvest",
+        "key": "harvest",
+        "day": 80,
+        "window": 7
+      }
+    ],
+    "growing_states": [],
+    "min_elevation_m": null
+  },
+  {
+    "slug": "muskmelon",
+    "names": {
+      "en": "Muskmelon",
+      "ta": "முலாம்பழம்",
+      "hi": "खरबूजा",
+      "te": "కర్బూజ",
+      "kn": "ಕರಬೂಜ",
+      "mr": "खरबूज",
+      "bn": "খরমুজ",
+      "gu": "ટેટી",
+      "ml": "ഷമാം",
+      "pa": "ਖਰਬੂਜ਼ਾ",
+      "or": "ଖରଭୁଜ"
+    },
+    "aliases": [
+      "kharbuja",
+      "muskmelon"
+    ],
+    "category": "vegetable",
+    "seasons": [
+      "zaid"
+    ],
+    "duration_days_min": 80,
+    "duration_days_max": 100,
+    "water_requirement": "medium",
+    "suitable_soils": [
+      "sandy",
+      "loamy"
+    ],
+    "fertilizer_guidance": "Typical N:P:K 100:60:60 kg/ha; half N at sowing, half at vine spread.",
+    "yield_min_q_per_acre": 50,
+    "yield_max_q_per_acre": 100,
+    "market_commodity": "Karbuja(Musk Melon)",
+    "calendar_template": [
+      {
+        "type": "land_preparation",
+        "key": "prepare_land",
+        "day": -7,
+        "window": 5
+      },
+      {
+        "type": "sowing",
+        "key": "transplant",
+        "day": 0
+      },
+      {
+        "type": "fertilizer",
+        "key": "basal_fertilizer",
+        "day": 0,
+        "window": 1
+      },
+      {
+        "type": "weeding",
+        "key": "first_weeding",
+        "day": 20,
+        "window": 4
+      },
+      {
+        "type": "fertilizer",
+        "key": "top_dress_nitrogen",
+        "day": 30,
+        "window": 3
+      },
+      {
+        "type": "fertilizer",
+        "key": "second_top_dress",
+        "day": 50,
+        "window": 3
+      },
+      {
+        "type": "weeding",
+        "key": "second_weeding",
+        "day": 40,
+        "window": 4
+      },
+      {
+        "type": "irrigation",
+        "key": "irrigate",
+        "every": 7,
+        "from": 7,
+        "until": 65
+      },
+      {
+        "type": "pest_monitoring",
+        "key": "scout_pests",
+        "every": 7,
+        "from": 15,
+        "until": 60
+      },
+      {
+        "type": "disease_monitoring",
+        "key": "scout_disease",
+        "every": 7,
+        "from": 22,
+        "until": 60
+      },
+      {
+        "type": "harvest",
+        "key": "harvest_prep",
+        "day": 73,
+        "window": 7
+      },
+      {
+        "type": "harvest",
+        "key": "harvest",
+        "day": 80,
+        "window": 7
+      }
+    ],
+    "growing_states": [],
+    "min_elevation_m": null
+  },
+  {
+    "slug": "banana",
+    "names": {
+      "en": "Banana",
+      "ta": "வாழை",
+      "hi": "केला",
+      "te": "అరటి",
+      "kn": "ಬಾಳೆ",
+      "mr": "केळी",
+      "bn": "কলা",
+      "gu": "કેળા",
+      "ml": "വാഴ",
+      "pa": "ਕੇਲਾ",
+      "or": "କଦଳୀ"
+    },
+    "aliases": [
+      "kela",
+      "banana",
+      "vazhai"
+    ],
+    "category": "fruit",
+    "seasons": [
+      "whole_year"
+    ],
+    "duration_days_min": 300,
+    "duration_days_max": 365,
+    "water_requirement": "high",
+    "suitable_soils": [
+      "loamy",
+      "alluvial",
+      "clay"
+    ],
+    "fertilizer_guidance": "Nutrient needs are per plant (roughly 200 g N, 60 g P, 300 g K per plant per cycle) in monthly splits. Follow your horticulture department schedule.",
+    "yield_min_q_per_acre": 160,
+    "yield_max_q_per_acre": 280,
+    "market_commodity": "Banana",
+    "calendar_template": [
+      {
+        "type": "fertilizer",
+        "key": "nutrient_dose",
+        "every": 60,
+        "from": 30,
+        "until": 270
+      },
+      {
+        "type": "irrigation",
+        "key": "irrigate",
+        "every": 14,
+        "from": 7,
+        "until": 293
+      },
+      {
+        "type": "pest_monitoring",
+        "key": "scout_pests",
+        "every": 30,
+        "from": 15,
+        "until": 285
+      },
+      {
+        "type": "disease_monitoring",
+        "key": "scout_disease",
+        "every": 30,
+        "from": 25,
+        "until": 285
+      },
+      {
+        "type": "harvest",
+        "key": "harvest_prep",
+        "day": 293,
+        "window": 7
+      },
+      {
+        "type": "harvest",
+        "key": "harvest",
+        "day": 300,
+        "window": 7
+      }
+    ],
+    "growing_states": [],
+    "min_elevation_m": null
+  },
+  {
+    "slug": "mango",
+    "names": {
+      "en": "Mango",
+      "ta": "மாம்பழம்",
+      "hi": "आम",
+      "te": "మామిడి",
+      "kn": "ಮಾವು",
+      "mr": "आंबा",
+      "bn": "আম",
+      "gu": "કેરી",
+      "ml": "മാമ്പഴം",
+      "pa": "ਅੰਬ",
+      "or": "ଆମ୍ବ"
+    },
+    "aliases": [
+      "aam",
+      "mango",
+      "maamaram"
+    ],
+    "category": "fruit",
+    "seasons": [
+      "whole_year"
+    ],
+    "duration_days_min": 365,
+    "duration_days_max": 365,
+    "water_requirement": "medium",
+    "suitable_soils": [
+      "alluvial",
+      "laterite",
+      "loamy",
+      "red"
+    ],
+    "fertilizer_guidance": "Doses depend on tree age; for a bearing tree roughly 1 kg N, 0.5 kg P, 1 kg K per year after harvest, with farmyard manure.",
+    "yield_min_q_per_acre": 25,
+    "yield_max_q_per_acre": 50,
+    "market_commodity": "Mango",
+    "calendar_template": [
+      {
+        "type": "fertilizer",
+        "key": "nutrient_dose",
+        "every": 60,
+        "from": 30,
+        "until": 335
+      },
+      {
+        "type": "irrigation",
+        "key": "irrigate",
+        "every": 14,
+        "from": 7,
+        "until": 358
+      },
+      {
+        "type": "pest_monitoring",
+        "key": "scout_pests",
+        "every": 30,
+        "from": 15,
+        "until": 350
+      },
+      {
+        "type": "disease_monitoring",
+        "key": "scout_disease",
+        "every": 30,
+        "from": 25,
+        "until": 350
+      },
+      {
+        "type": "harvest",
+        "key": "harvest_prep",
+        "day": 358,
+        "window": 7
+      },
+      {
+        "type": "harvest",
+        "key": "harvest",
+        "day": 365,
+        "window": 7
+      }
+    ],
+    "growing_states": [],
+    "min_elevation_m": null
+  },
+  {
+    "slug": "grapes",
+    "names": {
+      "en": "Grapes",
+      "ta": "திராட்சை",
+      "hi": "अंगूर",
+      "te": "ద్రాక్ష",
+      "kn": "ದ್ರಾಕ್ಷಿ",
+      "mr": "द्राक्षे",
+      "bn": "আঙুর",
+      "gu": "દ્રાક્ષ",
+      "ml": "മുന്തിരി",
+      "pa": "ਅੰਗੂਰ",
+      "or": "ଅଙ୍ଗୁର"
+    },
+    "aliases": [
+      "angoor",
+      "grapes",
+      "draksha"
+    ],
+    "category": "fruit",
+    "seasons": [
+      "whole_year"
+    ],
+    "duration_days_min": 150,
+    "duration_days_max": 180,
+    "water_requirement": "medium",
+    "suitable_soils": [
+      "black",
+      "loamy",
+      "red",
+      "sandy"
+    ],
+    "fertilizer_guidance": "Doses are vineyard specific and split after pruning; follow your horticulture department or NRC Grapes schedule.",
+    "yield_min_q_per_acre": 80,
+    "yield_max_q_per_acre": 120,
+    "market_commodity": "Grapes",
+    "calendar_template": [
+      {
+        "type": "fertilizer",
+        "key": "nutrient_dose",
+        "every": 60,
+        "from": 30,
+        "until": 120
+      },
+      {
+        "type": "irrigation",
+        "key": "irrigate",
+        "every": 14,
+        "from": 7,
+        "until": 143
+      },
+      {
+        "type": "pest_monitoring",
+        "key": "scout_pests",
+        "every": 30,
+        "from": 15,
+        "until": 135
+      },
+      {
+        "type": "disease_monitoring",
+        "key": "scout_disease",
+        "every": 30,
+        "from": 25,
+        "until": 135
+      },
+      {
+        "type": "harvest",
+        "key": "harvest_prep",
+        "day": 143,
+        "window": 7
+      },
+      {
+        "type": "harvest",
+        "key": "harvest",
+        "day": 150,
+        "window": 7
+      }
+    ],
+    "growing_states": [
+      "Maharashtra",
+      "Karnataka",
+      "Tamil Nadu",
+      "Andhra Pradesh",
+      "Telangana",
+      "Punjab",
+      "Mizoram"
+    ],
+    "min_elevation_m": null
+  },
+  {
+    "slug": "pomegranate",
+    "names": {
+      "en": "Pomegranate",
+      "ta": "மாதுளை",
+      "hi": "अनार",
+      "te": "దానిమ్మ",
+      "kn": "ದಾಳಿಂಬೆ",
+      "mr": "डाळिंब",
+      "bn": "ডালিম",
+      "gu": "દાડમ",
+      "ml": "മാതളനാരങ്ങ",
+      "pa": "ਅਨਾਰ",
+      "or": "ଡାଳିମ୍ବ"
+    },
+    "aliases": [
+      "anar",
+      "pomegranate",
+      "dalimb"
+    ],
+    "category": "fruit",
+    "seasons": [
+      "whole_year"
+    ],
+    "duration_days_min": 150,
+    "duration_days_max": 180,
+    "water_requirement": "low",
+    "suitable_soils": [
+      "loamy",
+      "red",
+      "black",
+      "sandy"
+    ],
+    "fertilizer_guidance": "Doses depend on plant age; split applications after bahar treatment. Follow your horticulture department schedule.",
+    "yield_min_q_per_acre": 40,
+    "yield_max_q_per_acre": 80,
+    "market_commodity": "Pomegranate",
+    "calendar_template": [
+      {
+        "type": "fertilizer",
+        "key": "nutrient_dose",
+        "every": 60,
+        "from": 30,
+        "until": 120
+      },
+      {
+        "type": "irrigation",
+        "key": "irrigate",
+        "every": 14,
+        "from": 7,
+        "until": 143
+      },
+      {
+        "type": "pest_monitoring",
+        "key": "scout_pests",
+        "every": 30,
+        "from": 15,
+        "until": 135
+      },
+      {
+        "type": "disease_monitoring",
+        "key": "scout_disease",
+        "every": 30,
+        "from": 25,
+        "until": 135
+      },
+      {
+        "type": "harvest",
+        "key": "harvest_prep",
+        "day": 143,
+        "window": 7
+      },
+      {
+        "type": "harvest",
+        "key": "harvest",
+        "day": 150,
+        "window": 7
+      }
+    ],
+    "growing_states": [
+      "Maharashtra",
+      "Karnataka",
+      "Gujarat",
+      "Andhra Pradesh",
+      "Telangana",
+      "Rajasthan",
+      "Madhya Pradesh",
+      "Tamil Nadu"
+    ],
+    "min_elevation_m": null
+  },
+  {
+    "slug": "apple",
+    "names": {
+      "en": "Apple",
+      "ta": "ஆப்பிள்",
+      "hi": "सेब",
+      "te": "ఆపిల్",
+      "kn": "ಸೇಬು",
+      "mr": "सफरचंद",
+      "bn": "আপেল",
+      "gu": "સફરજન",
+      "ml": "ആപ്പിൾ",
+      "pa": "ਸੇਬ",
+      "or": "ସେଓ"
+    },
+    "aliases": [
+      "seb",
+      "apple"
+    ],
+    "category": "fruit",
+    "seasons": [
+      "whole_year"
+    ],
+    "duration_days_min": 365,
+    "duration_days_max": 365,
+    "water_requirement": "medium",
+    "suitable_soils": [
+      "loamy"
+    ],
+    "fertilizer_guidance": "Doses depend on tree age; apply manure and NPK in early spring. Follow your horticulture department schedule.",
+    "yield_min_q_per_acre": 40,
+    "yield_max_q_per_acre": 100,
+    "market_commodity": "Apple",
+    "calendar_template": [
+      {
+        "type": "fertilizer",
+        "key": "nutrient_dose",
+        "every": 60,
+        "from": 30,
+        "until": 335
+      },
+      {
+        "type": "irrigation",
+        "key": "irrigate",
+        "every": 14,
+        "from": 7,
+        "until": 358
+      },
+      {
+        "type": "pest_monitoring",
+        "key": "scout_pests",
+        "every": 30,
+        "from": 15,
+        "until": 350
+      },
+      {
+        "type": "disease_monitoring",
+        "key": "scout_disease",
+        "every": 30,
+        "from": 25,
+        "until": 350
+      },
+      {
+        "type": "harvest",
+        "key": "harvest_prep",
+        "day": 358,
+        "window": 7
+      },
+      {
+        "type": "harvest",
+        "key": "harvest",
+        "day": 365,
+        "window": 7
+      }
+    ],
+    "growing_states": [
+      "Jammu And Kashmir",
+      "Himachal Pradesh",
+      "Uttarakhand",
+      "Arunachal Pradesh",
+      "Sikkim",
+      "Nagaland"
+    ],
+    "min_elevation_m": 1000
+  },
+  {
+    "slug": "orange",
+    "names": {
+      "en": "Orange",
+      "ta": "ஆரஞ்சு",
+      "hi": "संतरा",
+      "te": "నారింజ",
+      "kn": "ಕಿತ್ತಳೆ",
+      "mr": "संत्रा",
+      "bn": "কমলা",
+      "gu": "નારંગી",
+      "ml": "ഓറഞ്ച്",
+      "pa": "ਸੰਤਰਾ",
+      "or": "କମଳା"
+    },
+    "aliases": [
+      "santra",
+      "orange",
+      "mosambi"
+    ],
+    "category": "fruit",
+    "seasons": [
+      "whole_year"
+    ],
+    "duration_days_min": 365,
+    "duration_days_max": 365,
+    "water_requirement": "medium",
+    "suitable_soils": [
+      "loamy",
+      "black",
+      "alluvial"
+    ],
+    "fertilizer_guidance": "Doses depend on tree age; split NPK in two to three applications around flowering. Follow your horticulture department schedule.",
+    "yield_min_q_per_acre": 40,
+    "yield_max_q_per_acre": 80,
+    "market_commodity": "Orange",
+    "calendar_template": [
+      {
+        "type": "fertilizer",
+        "key": "nutrient_dose",
+        "every": 60,
+        "from": 30,
+        "until": 335
+      },
+      {
+        "type": "irrigation",
+        "key": "irrigate",
+        "every": 14,
+        "from": 7,
+        "until": 358
+      },
+      {
+        "type": "pest_monitoring",
+        "key": "scout_pests",
+        "every": 30,
+        "from": 15,
+        "until": 350
+      },
+      {
+        "type": "disease_monitoring",
+        "key": "scout_disease",
+        "every": 30,
+        "from": 25,
+        "until": 350
+      },
+      {
+        "type": "harvest",
+        "key": "harvest_prep",
+        "day": 358,
+        "window": 7
+      },
+      {
+        "type": "harvest",
+        "key": "harvest",
+        "day": 365,
+        "window": 7
+      }
+    ],
+    "growing_states": [
+      "Maharashtra",
+      "Madhya Pradesh",
+      "Rajasthan",
+      "Punjab",
+      "Karnataka",
+      "Assam",
+      "Meghalaya",
+      "Mizoram",
+      "Nagaland",
+      "Sikkim",
+      "Arunachal Pradesh",
+      "Manipur",
+      "Tripura"
+    ],
+    "min_elevation_m": null
+  },
+  {
+    "slug": "papaya",
+    "names": {
+      "en": "Papaya",
+      "ta": "பப்பாளி",
+      "hi": "पपीता",
+      "te": "బొప్పాయి",
+      "kn": "ಪಪ್ಪಾಯಿ",
+      "mr": "पपई",
+      "bn": "পেঁপে",
+      "gu": "પપૈયું",
+      "ml": "പപ്പായ",
+      "pa": "ਪਪੀਤਾ",
+      "or": "ଅମୃତଭଣ୍ଡା"
+    },
+    "aliases": [
+      "papita",
+      "papaya"
+    ],
+    "category": "fruit",
+    "seasons": [
+      "whole_year"
+    ],
+    "duration_days_min": 270,
+    "duration_days_max": 330,
+    "water_requirement": "medium",
+    "suitable_soils": [
+      "loamy",
+      "red",
+      "alluvial"
+    ],
+    "fertilizer_guidance": "Roughly 200 g each of N, P and K per plant per year in bimonthly splits.",
+    "yield_min_q_per_acre": 160,
+    "yield_max_q_per_acre": 280,
+    "market_commodity": "Papaya",
+    "calendar_template": [
+      {
+        "type": "fertilizer",
+        "key": "nutrient_dose",
+        "every": 60,
+        "from": 30,
+        "until": 240
+      },
+      {
+        "type": "irrigation",
+        "key": "irrigate",
+        "every": 14,
+        "from": 7,
+        "until": 263
+      },
+      {
+        "type": "pest_monitoring",
+        "key": "scout_pests",
+        "every": 30,
+        "from": 15,
+        "until": 255
+      },
+      {
+        "type": "disease_monitoring",
+        "key": "scout_disease",
+        "every": 30,
+        "from": 25,
+        "until": 255
+      },
+      {
+        "type": "harvest",
+        "key": "harvest_prep",
+        "day": 263,
+        "window": 7
+      },
+      {
+        "type": "harvest",
+        "key": "harvest",
+        "day": 270,
+        "window": 7
+      }
+    ],
+    "growing_states": [],
+    "min_elevation_m": null
+  },
+  {
+    "slug": "coconut",
+    "names": {
+      "en": "Coconut",
+      "ta": "தென்னை",
+      "hi": "नारियल",
+      "te": "కొబ్బరి",
+      "kn": "ತೆಂಗು",
+      "mr": "नारळ",
+      "bn": "নারকেল",
+      "gu": "નાળિયેર",
+      "ml": "തെങ്ങ്",
+      "pa": "ਨਾਰੀਅਲ",
+      "or": "ନଡ଼ିଆ"
+    },
+    "aliases": [
+      "nariyal",
+      "coconut",
+      "thengai"
+    ],
+    "category": "plantation",
+    "seasons": [
+      "whole_year"
+    ],
+    "duration_days_min": 365,
+    "duration_days_max": 365,
+    "water_requirement": "high",
+    "suitable_soils": [
+      "laterite",
+      "sandy",
+      "red",
+      "alluvial"
+    ],
+    "fertilizer_guidance": "For a bearing palm roughly 500 g N, 320 g P, 1200 g K per year in two splits, with organic manure.",
+    "yield_min_q_per_acre": 50,
+    "yield_max_q_per_acre": 100,
+    "market_commodity": "Coconut",
+    "calendar_template": [
+      {
+        "type": "fertilizer",
+        "key": "nutrient_dose",
+        "every": 60,
+        "from": 30,
+        "until": 335
+      },
+      {
+        "type": "irrigation",
+        "key": "irrigate",
+        "every": 14,
+        "from": 7,
+        "until": 358
+      },
+      {
+        "type": "pest_monitoring",
+        "key": "scout_pests",
+        "every": 30,
+        "from": 15,
+        "until": 350
+      },
+      {
+        "type": "disease_monitoring",
+        "key": "scout_disease",
+        "every": 30,
+        "from": 25,
+        "until": 350
+      },
+      {
+        "type": "harvest",
+        "key": "harvest_prep",
+        "day": 358,
+        "window": 7
+      },
+      {
+        "type": "harvest",
+        "key": "harvest",
+        "day": 365,
+        "window": 7
+      }
+    ],
+    "growing_states": [
+      "Kerala",
+      "Karnataka",
+      "Tamil Nadu",
+      "Andhra Pradesh",
+      "Goa",
+      "Odisha",
+      "West Bengal",
+      "Maharashtra",
+      "Gujarat",
+      "Assam",
+      "Puducherry",
+      "Andaman And Nicobar Islands",
+      "Lakshadweep"
+    ],
+    "min_elevation_m": null
+  },
+  {
+    "slug": "coffee",
+    "names": {
+      "en": "Coffee",
+      "ta": "காபி",
+      "hi": "कॉफी",
+      "te": "కాఫీ",
+      "kn": "ಕಾಫಿ",
+      "mr": "कॉफी",
+      "bn": "কফি",
+      "gu": "કોફી",
+      "ml": "കാപ്പി",
+      "pa": "ਕੌਫ਼ੀ",
+      "or": "କଫି"
+    },
+    "aliases": [
+      "coffee",
+      "kaapi"
+    ],
+    "category": "plantation",
+    "seasons": [
+      "whole_year"
+    ],
+    "duration_days_min": 365,
+    "duration_days_max": 365,
+    "water_requirement": "high",
+    "suitable_soils": [
+      "laterite",
+      "red",
+      "loamy"
+    ],
+    "fertilizer_guidance": "Doses depend on plant age and shade; follow the Coffee Board schedule (pre-blossom, post-blossom and monsoon splits).",
+    "yield_min_q_per_acre": 2,
+    "yield_max_q_per_acre": 4,
+    "market_commodity": null,
+    "calendar_template": [
+      {
+        "type": "fertilizer",
+        "key": "nutrient_dose",
+        "every": 60,
+        "from": 30,
+        "until": 335
+      },
+      {
+        "type": "irrigation",
+        "key": "irrigate",
+        "every": 14,
+        "from": 7,
+        "until": 358
+      },
+      {
+        "type": "pest_monitoring",
+        "key": "scout_pests",
+        "every": 30,
+        "from": 15,
+        "until": 350
+      },
+      {
+        "type": "disease_monitoring",
+        "key": "scout_disease",
+        "every": 30,
+        "from": 25,
+        "until": 350
+      },
+      {
+        "type": "harvest",
+        "key": "harvest_prep",
+        "day": 358,
+        "window": 7
+      },
+      {
+        "type": "harvest",
+        "key": "harvest",
+        "day": 365,
+        "window": 7
+      }
+    ],
+    "growing_states": [
+      "Karnataka",
+      "Kerala",
+      "Tamil Nadu",
+      "Andhra Pradesh",
+      "Odisha",
+      "Assam",
+      "Meghalaya",
+      "Mizoram",
+      "Nagaland",
+      "Sikkim",
+      "Arunachal Pradesh",
+      "Manipur",
+      "Tripura"
+    ],
+    "min_elevation_m": 500
+  }
+]

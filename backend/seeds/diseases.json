@@ -1,0 +1,1220 @@
+[
+ {
+  "slug": "apple.apple_scab",
+  "crop_slug": "apple",
+  "names": {
+   "en": "Apple scab"
+  },
+  "is_healthy": false,
+  "pathogen_type": "fungus",
+  "cause": "Fungus Venturia inaequalis, surviving in fallen leaves.",
+  "symptoms": [
+   "Olive-green to dark velvety spots on leaves",
+   "Dark, corky, cracked spots on fruit",
+   "Early leaf fall"
+  ],
+  "favorable_conditions": [
+   "Cool, wet spring weather",
+   "Leaves staying wet for many hours"
+  ],
+  "treatment": [
+   "Spray a registered fungicide such as captan, mancozeb or a triazole (e.g. hexaconazole) at label dose from bud break, repeating as per label during wet weather.",
+   "Remove and destroy badly infected leaves and fallen debris; do not compost them."
+  ],
+  "prevention": [
+   "Collect and destroy fallen leaves in autumn",
+   "Prune for open canopy and good air flow",
+   "Plant scab-tolerant varieties where available"
+  ],
+  "fertilizer_guidance": [
+   "Follow your Soil Health Card; avoid excess nitrogen, which makes leaves soft and more susceptible.",
+   "Adequate potassium improves disease tolerance."
+  ],
+  "safety_warnings": [
+   "Use only pesticides registered (CIB&RC) for this crop, at the dose printed on the label.",
+   "Wear gloves, a mask and full-sleeve clothing while spraying; do not spray against the wind.",
+   "Respect the pre-harvest interval on the label before harvesting.",
+   "Confirm the diagnosis with your agriculture officer, KVK or Kisan Call Centre (1800-180-1551) before spraying."
+  ]
+ },
+ {
+  "slug": "apple.black_rot",
+  "crop_slug": "apple",
+  "names": {
+   "en": "Apple black rot"
+  },
+  "is_healthy": false,
+  "pathogen_type": "fungus",
+  "cause": "Fungus Botryosphaeria obtusa, surviving in cankers and mummified fruit.",
+  "symptoms": [
+   "Purple spots on leaves that turn brown with a purple edge ('frog-eye')",
+   "Brown rot on fruit with rings, later black and shrivelled",
+   "Sunken cankers on branches"
+  ],
+  "favorable_conditions": [
+   "Warm, wet weather",
+   "Wounds from hail, insects or pruning"
+  ],
+  "treatment": [
+   "Prune out cankers and remove mummified fruit.",
+   "Spray a registered fungicide such as captan or mancozeb at label dose during the growing season."
+  ],
+  "prevention": [
+   "Remove dead wood and mummies every winter",
+   "Avoid wounding trees",
+   "Keep orchard floor clean"
+  ],
+  "fertilizer_guidance": [
+   "Follow your Soil Health Card; avoid excess nitrogen, which makes leaves soft and more susceptible.",
+   "Adequate potassium improves disease tolerance."
+  ],
+  "safety_warnings": [
+   "Use only pesticides registered (CIB&RC) for this crop, at the dose printed on the label.",
+   "Wear gloves, a mask and full-sleeve clothing while spraying; do not spray against the wind.",
+   "Respect the pre-harvest interval on the label before harvesting.",
+   "Confirm the diagnosis with your agriculture officer, KVK or Kisan Call Centre (1800-180-1551) before spraying."
+  ]
+ },
+ {
+  "slug": "apple.cedar_apple_rust",
+  "crop_slug": "apple",
+  "names": {
+   "en": "Cedar apple rust"
+  },
+  "is_healthy": false,
+  "pathogen_type": "fungus",
+  "cause": "Rust fungus Gymnosporangium juniperi-virginianae, which alternates between apple and juniper/cedar trees.",
+  "symptoms": [
+   "Bright yellow-orange spots on upper leaf surface",
+   "Small tube-like structures under the spots",
+   "Spots on fruit"
+  ],
+  "favorable_conditions": [
+   "Wet spring weather",
+   "Juniper or cedar trees nearby"
+  ],
+  "treatment": [
+   "Spray a registered rust fungicide (e.g. a triazole such as hexaconazole) at label dose from pink bud stage during wet weather."
+  ],
+  "prevention": [
+   "Remove nearby juniper/cedar hosts where practical",
+   "Plant resistant varieties"
+  ],
+  "fertilizer_guidance": [
+   "Follow your Soil Health Card; avoid excess nitrogen, which makes leaves soft and more susceptible.",
+   "Adequate potassium improves disease tolerance."
+  ],
+  "safety_warnings": [
+   "Use only pesticides registered (CIB&RC) for this crop, at the dose printed on the label.",
+   "Wear gloves, a mask and full-sleeve clothing while spraying; do not spray against the wind.",
+   "Respect the pre-harvest interval on the label before harvesting.",
+   "Confirm the diagnosis with your agriculture officer, KVK or Kisan Call Centre (1800-180-1551) before spraying."
+  ]
+ },
+ {
+  "slug": "apple.healthy",
+  "crop_slug": "apple",
+  "names": {
+   "en": "Healthy apple"
+  },
+  "is_healthy": true,
+  "pathogen_type": "",
+  "cause": "",
+  "symptoms": [],
+  "favorable_conditions": [],
+  "treatment": [],
+  "prevention": [
+   "Keep checking the crop every week, especially after rain or humid weather.",
+   "Remove weeds and keep the field clean."
+  ],
+  "fertilizer_guidance": [
+   "Continue balanced nutrition as per your soil test."
+  ],
+  "safety_warnings": []
+ },
+ {
+  "slug": "blueberry.healthy",
+  "crop_slug": "blueberry",
+  "names": {
+   "en": "Healthy blueberry"
+  },
+  "is_healthy": true,
+  "pathogen_type": "",
+  "cause": "",
+  "symptoms": [],
+  "favorable_conditions": [],
+  "treatment": [],
+  "prevention": [
+   "Keep checking the crop every week, especially after rain or humid weather.",
+   "Remove weeds and keep the field clean."
+  ],
+  "fertilizer_guidance": [
+   "Continue balanced nutrition as per your soil test."
+  ],
+  "safety_warnings": []
+ },
+ {
+  "slug": "cherry.powdery_mildew",
+  "crop_slug": "cherry",
+  "names": {
+   "en": "Cherry powdery mildew"
+  },
+  "is_healthy": false,
+  "pathogen_type": "fungus",
+  "cause": "Fungus Podosphaera clandestina.",
+  "symptoms": [
+   "White powdery patches on young leaves",
+   "Curled or distorted leaves",
+   "Powdery spots on fruit"
+  ],
+  "favorable_conditions": [
+   "Warm days with humid nights",
+   "Dense canopy with poor air flow"
+  ],
+  "treatment": [
+   "Spray wettable sulphur or a registered fungicide (e.g. hexaconazole) at label dose at first sign."
+  ],
+  "prevention": [
+   "Prune for good air movement",
+   "Avoid excess nitrogen",
+   "Remove root suckers"
+  ],
+  "fertilizer_guidance": [
+   "Follow your Soil Health Card; avoid excess nitrogen, which makes leaves soft and more susceptible.",
+   "Adequate potassium improves disease tolerance."
+  ],
+  "safety_warnings": [
+   "Use only pesticides registered (CIB&RC) for this crop, at the dose printed on the label.",
+   "Wear gloves, a mask and full-sleeve clothing while spraying; do not spray against the wind.",
+   "Respect the pre-harvest interval on the label before harvesting.",
+   "Confirm the diagnosis with your agriculture officer, KVK or Kisan Call Centre (1800-180-1551) before spraying."
+  ]
+ },
+ {
+  "slug": "cherry.healthy",
+  "crop_slug": "cherry",
+  "names": {
+   "en": "Healthy cherry"
+  },
+  "is_healthy": true,
+  "pathogen_type": "",
+  "cause": "",
+  "symptoms": [],
+  "favorable_conditions": [],
+  "treatment": [],
+  "prevention": [
+   "Keep checking the crop every week, especially after rain or humid weather.",
+   "Remove weeds and keep the field clean."
+  ],
+  "fertilizer_guidance": [
+   "Continue balanced nutrition as per your soil test."
+  ],
+  "safety_warnings": []
+ },
+ {
+  "slug": "maize.gray_leaf_spot",
+  "crop_slug": "maize",
+  "names": {
+   "en": "Maize gray leaf spot"
+  },
+  "is_healthy": false,
+  "pathogen_type": "fungus",
+  "cause": "Fungus Cercospora zeae-maydis, surviving on maize residue.",
+  "symptoms": [
+   "Long, narrow, rectangular grey-tan spots between leaf veins",
+   "Spots join and leaves dry from the bottom up"
+  ],
+  "favorable_conditions": [
+   "Warm, humid weather with long dew periods",
+   "Maize grown after maize with residue left on the surface"
+  ],
+  "treatment": [
+   "Spray a registered fungicide (e.g. azoxystrobin or propiconazole) at label dose when spots appear before tasselling."
+  ],
+  "prevention": [
+   "Rotate with pulses or other non-cereal crops",
+   "Bury or remove infected residue",
+   "Use tolerant hybrids"
+  ],
+  "fertilizer_guidance": [
+   "Follow your Soil Health Card; avoid excess nitrogen, which makes leaves soft and more susceptible.",
+   "Adequate potassium improves disease tolerance."
+  ],
+  "safety_warnings": [
+   "Use only pesticides registered (CIB&RC) for this crop, at the dose printed on the label.",
+   "Wear gloves, a mask and full-sleeve clothing while spraying; do not spray against the wind.",
+   "Respect the pre-harvest interval on the label before harvesting.",
+   "Confirm the diagnosis with your agriculture officer, KVK or Kisan Call Centre (1800-180-1551) before spraying."
+  ]
+ },
+ {
+  "slug": "maize.common_rust",
+  "crop_slug": "maize",
+  "names": {
+   "en": "Maize common rust"
+  },
+  "is_healthy": false,
+  "pathogen_type": "fungus",
+  "cause": "Rust fungus Puccinia sorghi; spores travel long distances in wind.",
+  "symptoms": [
+   "Small, raised, cinnamon-brown powdery pustules on both leaf surfaces",
+   "Leaves turn yellow and dry in severe cases"
+  ],
+  "favorable_conditions": [
+   "Cool temperatures (16-23°C) with high humidity or dew"
+  ],
+  "treatment": [
+   "Spray a registered fungicide such as mancozeb or propiconazole at label dose if pustules appear early on upper leaves."
+  ],
+  "prevention": [
+   "Grow resistant hybrids",
+   "Sow at the recommended time to avoid cool, humid periods at early growth"
+  ],
+  "fertilizer_guidance": [
+   "Follow your Soil Health Card; avoid excess nitrogen, which makes leaves soft and more susceptible.",
+   "Adequate potassium improves disease tolerance."
+  ],
+  "safety_warnings": [
+   "Use only pesticides registered (CIB&RC) for this crop, at the dose printed on the label.",
+   "Wear gloves, a mask and full-sleeve clothing while spraying; do not spray against the wind.",
+   "Respect the pre-harvest interval on the label before harvesting.",
+   "Confirm the diagnosis with your agriculture officer, KVK or Kisan Call Centre (1800-180-1551) before spraying."
+  ]
+ },
+ {
+  "slug": "maize.northern_leaf_blight",
+  "crop_slug": "maize",
+  "names": {
+   "en": "Maize northern leaf blight (Turcicum)"
+  },
+  "is_healthy": false,
+  "pathogen_type": "fungus",
+  "cause": "Fungus Exserohilum turcicum, surviving on crop residue.",
+  "symptoms": [
+   "Long, cigar-shaped grey-green to tan lesions 2-15 cm on leaves",
+   "Lesions start on lower leaves and move up"
+  ],
+  "favorable_conditions": [
+   "Moderate temperatures (18-27°C) with heavy dew or rain"
+  ],
+  "treatment": [
+   "Spray a registered fungicide such as mancozeb or azoxystrobin at label dose at first symptoms; repeat as per label."
+  ],
+  "prevention": [
+   "Use resistant hybrids",
+   "Crop rotation and residue management",
+   "Balanced fertilisation"
+  ],
+  "fertilizer_guidance": [
+   "Follow your Soil Health Card; avoid excess nitrogen, which makes leaves soft and more susceptible.",
+   "Adequate potassium improves disease tolerance."
+  ],
+  "safety_warnings": [
+   "Use only pesticides registered (CIB&RC) for this crop, at the dose printed on the label.",
+   "Wear gloves, a mask and full-sleeve clothing while spraying; do not spray against the wind.",
+   "Respect the pre-harvest interval on the label before harvesting.",
+   "Confirm the diagnosis with your agriculture officer, KVK or Kisan Call Centre (1800-180-1551) before spraying."
+  ]
+ },
+ {
+  "slug": "maize.healthy",
+  "crop_slug": "maize",
+  "names": {
+   "en": "Healthy maize"
+  },
+  "is_healthy": true,
+  "pathogen_type": "",
+  "cause": "",
+  "symptoms": [],
+  "favorable_conditions": [],
+  "treatment": [],
+  "prevention": [
+   "Keep checking the crop every week, especially after rain or humid weather.",
+   "Remove weeds and keep the field clean."
+  ],
+  "fertilizer_guidance": [
+   "Continue balanced nutrition as per your soil test."
+  ],
+  "safety_warnings": []
+ },
+ {
+  "slug": "grapes.black_rot",
+  "crop_slug": "grapes",
+  "names": {
+   "en": "Grape black rot"
+  },
+  "is_healthy": false,
+  "pathogen_type": "fungus",
+  "cause": "Fungus Guignardia bidwellii, surviving in mummified berries and canes.",
+  "symptoms": [
+   "Round tan spots with dark borders on leaves",
+   "Berries turn brown, then black, hard and shrivelled (mummies)"
+  ],
+  "favorable_conditions": [
+   "Warm, wet weather from flowering to fruit set"
+  ],
+  "treatment": [
+   "Spray a registered fungicide such as mancozeb or a triazole at label dose from early shoot growth through fruit set.",
+   "Remove mummified berries from vines and ground."
+  ],
+  "prevention": [
+   "Remove mummies and infected canes at pruning",
+   "Train vines for good air flow and sun"
+  ],
+  "fertilizer_guidance": [
+   "Follow your Soil Health Card; avoid excess nitrogen, which makes leaves soft and more susceptible.",
+   "Adequate potassium improves disease tolerance."
+  ],
+  "safety_warnings": [
+   "Use only pesticides registered (CIB&RC) for this crop, at the dose printed on the label.",
+   "Wear gloves, a mask and full-sleeve clothing while spraying; do not spray against the wind.",
+   "Respect the pre-harvest interval on the label before harvesting.",
+   "Confirm the diagnosis with your agriculture officer, KVK or Kisan Call Centre (1800-180-1551) before spraying."
+  ]
+ },
+ {
+  "slug": "grapes.esca_black_measles",
+  "crop_slug": "grapes",
+  "names": {
+   "en": "Grape esca (black measles)"
+  },
+  "is_healthy": false,
+  "pathogen_type": "fungus",
+  "cause": "A complex of wood-rotting fungi (e.g. Phaeomoniella, Phaeoacremonium) entering through pruning wounds.",
+  "symptoms": [
+   "Tiger-stripe pattern: yellow or red bands between leaf veins that dry out",
+   "Small dark spots on berries",
+   "Sudden wilting of a whole vine in summer"
+  ],
+  "favorable_conditions": [
+   "Large pruning wounds",
+   "Older vines",
+   "Water stress"
+  ],
+  "treatment": [
+   "There is no curative spray. Cut out and destroy affected wood well below symptoms.",
+   "Protect large pruning cuts with a registered wound sealant or fungicide paste."
+  ],
+  "prevention": [
+   "Prune in dry weather",
+   "Avoid large cuts",
+   "Disinfect pruning tools between vines"
+  ],
+  "fertilizer_guidance": [
+   "Follow your Soil Health Card; avoid excess nitrogen, which makes leaves soft and more susceptible.",
+   "Adequate potassium improves disease tolerance."
+  ],
+  "safety_warnings": [
+   "Use only pesticides registered (CIB&RC) for this crop, at the dose printed on the label.",
+   "Wear gloves, a mask and full-sleeve clothing while spraying; do not spray against the wind.",
+   "Respect the pre-harvest interval on the label before harvesting.",
+   "Confirm the diagnosis with your agriculture officer, KVK or Kisan Call Centre (1800-180-1551) before spraying."
+  ]
+ },
+ {
+  "slug": "grapes.leaf_blight",
+  "crop_slug": "grapes",
+  "names": {
+   "en": "Grape leaf blight (Isariopsis leaf spot)"
+  },
+  "is_healthy": false,
+  "pathogen_type": "fungus",
+  "cause": "Fungus Pseudocercospora vitis (Isariopsis).",
+  "symptoms": [
+   "Irregular dark brown spots on older leaves, often with a yellow halo",
+   "Leaves dry and fall early"
+  ],
+  "favorable_conditions": [
+   "Warm, humid weather",
+   "Dense canopy"
+  ],
+  "treatment": [
+   "Spray a registered fungicide such as mancozeb or copper oxychloride at label dose.",
+   "Remove and destroy badly infected leaves and fallen debris; do not compost them."
+  ],
+  "prevention": [
+   "Canopy management for air flow",
+   "Remove fallen leaves"
+  ],
+  "fertilizer_guidance": [
+   "Follow your Soil Health Card; avoid excess nitrogen, which makes leaves soft and more susceptible.",
+   "Adequate potassium improves disease tolerance."
+  ],
+  "safety_warnings": [
+   "Use only pesticides registered (CIB&RC) for this crop, at the dose printed on the label.",
+   "Wear gloves, a mask and full-sleeve clothing while spraying; do not spray against the wind.",
+   "Respect the pre-harvest interval on the label before harvesting.",
+   "Confirm the diagnosis with your agriculture officer, KVK or Kisan Call Centre (1800-180-1551) before spraying."
+  ]
+ },
+ {
+  "slug": "grapes.healthy",
+  "crop_slug": "grapes",
+  "names": {
+   "en": "Healthy grape vine"
+  },
+  "is_healthy": true,
+  "pathogen_type": "",
+  "cause": "",
+  "symptoms": [],
+  "favorable_conditions": [],
+  "treatment": [],
+  "prevention": [
+   "Keep checking the crop every week, especially after rain or humid weather.",
+   "Remove weeds and keep the field clean."
+  ],
+  "fertilizer_guidance": [
+   "Continue balanced nutrition as per your soil test."
+  ],
+  "safety_warnings": []
+ },
+ {
+  "slug": "orange.citrus_greening",
+  "crop_slug": "orange",
+  "names": {
+   "en": "Citrus greening (Huanglongbing)"
+  },
+  "is_healthy": false,
+  "pathogen_type": "bacterium",
+  "cause": "Bacterium Candidatus Liberibacter, spread by the citrus psyllid insect and by infected planting material.",
+  "symptoms": [
+   "Blotchy, uneven yellowing of leaves (not symmetric across the midrib)",
+   "Small, lopsided, bitter fruit that stays green at the bottom",
+   "Twig dieback and declining tree"
+  ],
+  "favorable_conditions": [
+   "Presence of citrus psyllid",
+   "Infected nursery plants"
+  ],
+  "treatment": [
+   "There is no cure. Remove and destroy confirmed infected trees to protect the rest of the orchard.",
+   "Control the psyllid vector with a registered insecticide at label dose during new flush."
+  ],
+  "prevention": [
+   "Plant only certified disease-free nursery plants",
+   "Monitor and control psyllids on new leaves",
+   "Inspect orchards regularly"
+  ],
+  "fertilizer_guidance": [
+   "Balanced nutrition with zinc and other micronutrients can keep mildly affected trees productive longer, but does not cure the disease."
+  ],
+  "safety_warnings": [
+   "Use only pesticides registered (CIB&RC) for this crop, at the dose printed on the label.",
+   "Wear gloves, a mask and full-sleeve clothing while spraying; do not spray against the wind.",
+   "Respect the pre-harvest interval on the label before harvesting.",
+   "Confirm the diagnosis with your agriculture officer, KVK or Kisan Call Centre (1800-180-1551) before spraying."
+  ]
+ },
+ {
+  "slug": "peach.bacterial_spot",
+  "crop_slug": "peach",
+  "names": {
+   "en": "Peach bacterial spot"
+  },
+  "is_healthy": false,
+  "pathogen_type": "bacterium",
+  "cause": "Bacterium Xanthomonas arboricola pv. pruni.",
+  "symptoms": [
+   "Small angular water-soaked spots on leaves that turn purple-brown and fall out ('shot holes')",
+   "Sunken spots and cracks on fruit"
+  ],
+  "favorable_conditions": [
+   "Warm, wet, windy weather",
+   "Sandy soils"
+  ],
+  "treatment": [
+   "Spray a registered copper fungicide at label dose in early season.",
+   "Prune out infected twigs."
+  ],
+  "prevention": [
+   "Plant tolerant varieties",
+   "Avoid overhead irrigation",
+   "Balanced nitrogen"
+  ],
+  "fertilizer_guidance": [
+   "Follow your Soil Health Card; avoid excess nitrogen, which makes leaves soft and more susceptible.",
+   "Adequate potassium improves disease tolerance."
+  ],
+  "safety_warnings": [
+   "Use only pesticides registered (CIB&RC) for this crop, at the dose printed on the label.",
+   "Wear gloves, a mask and full-sleeve clothing while spraying; do not spray against the wind.",
+   "Respect the pre-harvest interval on the label before harvesting.",
+   "Confirm the diagnosis with your agriculture officer, KVK or Kisan Call Centre (1800-180-1551) before spraying."
+  ]
+ },
+ {
+  "slug": "peach.healthy",
+  "crop_slug": "peach",
+  "names": {
+   "en": "Healthy peach"
+  },
+  "is_healthy": true,
+  "pathogen_type": "",
+  "cause": "",
+  "symptoms": [],
+  "favorable_conditions": [],
+  "treatment": [],
+  "prevention": [
+   "Keep checking the crop every week, especially after rain or humid weather.",
+   "Remove weeds and keep the field clean."
+  ],
+  "fertilizer_guidance": [
+   "Continue balanced nutrition as per your soil test."
+  ],
+  "safety_warnings": []
+ },
+ {
+  "slug": "bell_pepper.bacterial_spot",
+  "crop_slug": "bell_pepper",
+  "names": {
+   "en": "Capsicum bacterial spot"
+  },
+  "is_healthy": false,
+  "pathogen_type": "bacterium",
+  "cause": "Bacterium Xanthomonas species, carried on seed and crop debris.",
+  "symptoms": [
+   "Small water-soaked spots on leaves that turn brown with yellow halos",
+   "Raised scabby spots on fruit",
+   "Leaf drop"
+  ],
+  "favorable_conditions": [
+   "Warm, wet weather",
+   "Splashing rain or overhead irrigation"
+  ],
+  "treatment": [
+   "Spray a registered copper-based bactericide (e.g. copper oxychloride) at label dose.",
+   "Remove badly infected plants."
+  ],
+  "prevention": [
+   "Use disease-free or hot-water-treated seed",
+   "Rotate crops for 2-3 years away from tomato/capsicum",
+   "Avoid working in wet fields"
+  ],
+  "fertilizer_guidance": [
+   "Follow your Soil Health Card; avoid excess nitrogen, which makes leaves soft and more susceptible.",
+   "Adequate potassium improves disease tolerance."
+  ],
+  "safety_warnings": [
+   "Use only pesticides registered (CIB&RC) for this crop, at the dose printed on the label.",
+   "Wear gloves, a mask and full-sleeve clothing while spraying; do not spray against the wind.",
+   "Respect the pre-harvest interval on the label before harvesting.",
+   "Confirm the diagnosis with your agriculture officer, KVK or Kisan Call Centre (1800-180-1551) before spraying."
+  ]
+ },
+ {
+  "slug": "bell_pepper.healthy",
+  "crop_slug": "bell_pepper",
+  "names": {
+   "en": "Healthy capsicum"
+  },
+  "is_healthy": true,
+  "pathogen_type": "",
+  "cause": "",
+  "symptoms": [],
+  "favorable_conditions": [],
+  "treatment": [],
+  "prevention": [
+   "Keep checking the crop every week, especially after rain or humid weather.",
+   "Remove weeds and keep the field clean."
+  ],
+  "fertilizer_guidance": [
+   "Continue balanced nutrition as per your soil test."
+  ],
+  "safety_warnings": []
+ },
+ {
+  "slug": "potato.early_blight",
+  "crop_slug": "potato",
+  "names": {
+   "en": "Potato early blight"
+  },
+  "is_healthy": false,
+  "pathogen_type": "fungus",
+  "cause": "Fungus Alternaria solani, surviving in soil and crop debris.",
+  "symptoms": [
+   "Dark brown spots with concentric rings ('target' pattern) on older leaves",
+   "Yellowing around spots; leaves dry from the bottom"
+  ],
+  "favorable_conditions": [
+   "Warm temperatures with alternating wet and dry periods",
+   "Stressed or poorly fed plants"
+  ],
+  "treatment": [
+   "Spray a registered fungicide such as mancozeb, chlorothalonil or azoxystrobin at label dose; repeat as per label.",
+   "Remove and destroy badly infected leaves and fallen debris; do not compost them."
+  ],
+  "prevention": [
+   "Crop rotation of at least 2 years",
+   "Use healthy seed tubers",
+   "Adequate nitrogen and potassium"
+  ],
+  "fertilizer_guidance": [
+   "Follow your Soil Health Card; avoid excess nitrogen, which makes leaves soft and more susceptible.",
+   "Adequate potassium improves disease tolerance."
+  ],
+  "safety_warnings": [
+   "Use only pesticides registered (CIB&RC) for this crop, at the dose printed on the label.",
+   "Wear gloves, a mask and full-sleeve clothing while spraying; do not spray against the wind.",
+   "Respect the pre-harvest interval on the label before harvesting.",
+   "Confirm the diagnosis with your agriculture officer, KVK or Kisan Call Centre (1800-180-1551) before spraying."
+  ]
+ },
+ {
+  "slug": "potato.late_blight",
+  "crop_slug": "potato",
+  "names": {
+   "en": "Potato late blight"
+  },
+  "is_healthy": false,
+  "pathogen_type": "oomycete",
+  "cause": "Water mould Phytophthora infestans, spreading fast by airborne spores.",
+  "symptoms": [
+   "Large, dark, water-soaked patches on leaves, often with white mould on the underside",
+   "Brown, firm rot in tubers",
+   "Whole field can collapse within days"
+  ],
+  "favorable_conditions": [
+   "Cool (10-20°C), humid weather, fog or continuous drizzle",
+   "Infected seed tubers or volunteer plants"
+  ],
+  "treatment": [
+   "Act immediately: spray a registered systemic + contact fungicide (e.g. metalaxyl + mancozeb or cymoxanil + mancozeb) at label dose, then repeat with contact fungicide as per label.",
+   "Destroy heavily infected plants away from the field."
+  ],
+  "prevention": [
+   "Plant certified healthy seed tubers",
+   "Prophylactic mancozeb spray when cool, foggy weather is forecast",
+   "Earth up well to protect tubers",
+   "Grow resistant varieties"
+  ],
+  "fertilizer_guidance": [
+   "Follow your Soil Health Card; avoid excess nitrogen, which makes leaves soft and more susceptible.",
+   "Adequate potassium improves disease tolerance."
+  ],
+  "safety_warnings": [
+   "Use only pesticides registered (CIB&RC) for this crop, at the dose printed on the label.",
+   "Wear gloves, a mask and full-sleeve clothing while spraying; do not spray against the wind.",
+   "Respect the pre-harvest interval on the label before harvesting.",
+   "Confirm the diagnosis with your agriculture officer, KVK or Kisan Call Centre (1800-180-1551) before spraying."
+  ]
+ },
+ {
+  "slug": "potato.healthy",
+  "crop_slug": "potato",
+  "names": {
+   "en": "Healthy potato"
+  },
+  "is_healthy": true,
+  "pathogen_type": "",
+  "cause": "",
+  "symptoms": [],
+  "favorable_conditions": [],
+  "treatment": [],
+  "prevention": [
+   "Keep checking the crop every week, especially after rain or humid weather.",
+   "Remove weeds and keep the field clean."
+  ],
+  "fertilizer_guidance": [
+   "Continue balanced nutrition as per your soil test."
+  ],
+  "safety_warnings": []
+ },
+ {
+  "slug": "raspberry.healthy",
+  "crop_slug": "raspberry",
+  "names": {
+   "en": "Healthy raspberry"
+  },
+  "is_healthy": true,
+  "pathogen_type": "",
+  "cause": "",
+  "symptoms": [],
+  "favorable_conditions": [],
+  "treatment": [],
+  "prevention": [
+   "Keep checking the crop every week, especially after rain or humid weather.",
+   "Remove weeds and keep the field clean."
+  ],
+  "fertilizer_guidance": [
+   "Continue balanced nutrition as per your soil test."
+  ],
+  "safety_warnings": []
+ },
+ {
+  "slug": "soybean.healthy",
+  "crop_slug": "soybean",
+  "names": {
+   "en": "Healthy soybean"
+  },
+  "is_healthy": true,
+  "pathogen_type": "",
+  "cause": "",
+  "symptoms": [],
+  "favorable_conditions": [],
+  "treatment": [],
+  "prevention": [
+   "Keep checking the crop every week, especially after rain or humid weather.",
+   "Remove weeds and keep the field clean."
+  ],
+  "fertilizer_guidance": [
+   "Continue balanced nutrition as per your soil test."
+  ],
+  "safety_warnings": []
+ },
+ {
+  "slug": "squash.powdery_mildew",
+  "crop_slug": "squash",
+  "names": {
+   "en": "Squash/pumpkin powdery mildew"
+  },
+  "is_healthy": false,
+  "pathogen_type": "fungus",
+  "cause": "Fungi such as Podosphaera xanthii.",
+  "symptoms": [
+   "White powdery patches on both leaf surfaces",
+   "Leaves yellow, dry and die early"
+  ],
+  "favorable_conditions": [
+   "Warm days, cool nights and high humidity",
+   "Shaded, crowded plants"
+  ],
+  "treatment": [
+   "Spray wettable sulphur or a registered fungicide (e.g. hexaconazole) at label dose at first sign."
+  ],
+  "prevention": [
+   "Give plants enough spacing and sunlight",
+   "Remove old infected leaves",
+   "Grow tolerant varieties"
+  ],
+  "fertilizer_guidance": [
+   "Follow your Soil Health Card; avoid excess nitrogen, which makes leaves soft and more susceptible.",
+   "Adequate potassium improves disease tolerance."
+  ],
+  "safety_warnings": [
+   "Use only pesticides registered (CIB&RC) for this crop, at the dose printed on the label.",
+   "Wear gloves, a mask and full-sleeve clothing while spraying; do not spray against the wind.",
+   "Respect the pre-harvest interval on the label before harvesting.",
+   "Confirm the diagnosis with your agriculture officer, KVK or Kisan Call Centre (1800-180-1551) before spraying."
+  ]
+ },
+ {
+  "slug": "strawberry.leaf_scorch",
+  "crop_slug": "strawberry",
+  "names": {
+   "en": "Strawberry leaf scorch"
+  },
+  "is_healthy": false,
+  "pathogen_type": "fungus",
+  "cause": "Fungus Diplocarpon earlianum.",
+  "symptoms": [
+   "Many small, irregular purple spots on leaves",
+   "Spots join and leaves look burnt and dry"
+  ],
+  "favorable_conditions": [
+   "Warm, wet weather",
+   "Overhead irrigation"
+  ],
+  "treatment": [
+   "Spray a registered fungicide such as captan at label dose.",
+   "Remove and destroy badly infected leaves and fallen debris; do not compost them."
+  ],
+  "prevention": [
+   "Use healthy planting material",
+   "Drip instead of overhead irrigation",
+   "Renew beds regularly"
+  ],
+  "fertilizer_guidance": [
+   "Follow your Soil Health Card; avoid excess nitrogen, which makes leaves soft and more susceptible.",
+   "Adequate potassium improves disease tolerance."
+  ],
+  "safety_warnings": [
+   "Use only pesticides registered (CIB&RC) for this crop, at the dose printed on the label.",
+   "Wear gloves, a mask and full-sleeve clothing while spraying; do not spray against the wind.",
+   "Respect the pre-harvest interval on the label before harvesting.",
+   "Confirm the diagnosis with your agriculture officer, KVK or Kisan Call Centre (1800-180-1551) before spraying."
+  ]
+ },
+ {
+  "slug": "strawberry.healthy",
+  "crop_slug": "strawberry",
+  "names": {
+   "en": "Healthy strawberry"
+  },
+  "is_healthy": true,
+  "pathogen_type": "",
+  "cause": "",
+  "symptoms": [],
+  "favorable_conditions": [],
+  "treatment": [],
+  "prevention": [
+   "Keep checking the crop every week, especially after rain or humid weather.",
+   "Remove weeds and keep the field clean."
+  ],
+  "fertilizer_guidance": [
+   "Continue balanced nutrition as per your soil test."
+  ],
+  "safety_warnings": []
+ },
+ {
+  "slug": "tomato.bacterial_spot",
+  "crop_slug": "tomato",
+  "names": {
+   "en": "Tomato bacterial spot"
+  },
+  "is_healthy": false,
+  "pathogen_type": "bacterium",
+  "cause": "Bacterium Xanthomonas species, carried on seed and debris.",
+  "symptoms": [
+   "Small dark water-soaked spots on leaves, sometimes with yellow halo",
+   "Small raised scabby spots on fruit"
+  ],
+  "favorable_conditions": [
+   "Warm, wet weather",
+   "Rain splash and overhead irrigation"
+  ],
+  "treatment": [
+   "Spray a registered copper-based bactericide at label dose.",
+   "Remove severely infected plants."
+  ],
+  "prevention": [
+   "Use disease-free seed and seedlings",
+   "Rotate away from tomato/capsicum for 2-3 years",
+   "Avoid overhead irrigation"
+  ],
+  "fertilizer_guidance": [
+   "Follow your Soil Health Card; avoid excess nitrogen, which makes leaves soft and more susceptible.",
+   "Adequate potassium improves disease tolerance."
+  ],
+  "safety_warnings": [
+   "Use only pesticides registered (CIB&RC) for this crop, at the dose printed on the label.",
+   "Wear gloves, a mask and full-sleeve clothing while spraying; do not spray against the wind.",
+   "Respect the pre-harvest interval on the label before harvesting.",
+   "Confirm the diagnosis with your agriculture officer, KVK or Kisan Call Centre (1800-180-1551) before spraying."
+  ]
+ },
+ {
+  "slug": "tomato.early_blight",
+  "crop_slug": "tomato",
+  "names": {
+   "en": "Tomato early blight"
+  },
+  "is_healthy": false,
+  "pathogen_type": "fungus",
+  "cause": "Fungus Alternaria solani, surviving in soil and plant debris.",
+  "symptoms": [
+   "Brown spots with concentric rings on older leaves",
+   "Yellowing around spots; lower leaves drop",
+   "Dark sunken spots near the fruit stem"
+  ],
+  "favorable_conditions": [
+   "Warm, humid weather",
+   "Plants under nutrient or water stress"
+  ],
+  "treatment": [
+   "Spray a registered fungicide such as mancozeb, chlorothalonil or azoxystrobin at label dose; repeat as per label.",
+   "Remove and destroy badly infected leaves and fallen debris; do not compost them."
+  ],
+  "prevention": [
+   "Crop rotation",
+   "Mulch to stop soil splash",
+   "Stake plants and remove lower leaves touching the soil"
+  ],
+  "fertilizer_guidance": [
+   "Follow your Soil Health Card; avoid excess nitrogen, which makes leaves soft and more susceptible.",
+   "Adequate potassium improves disease tolerance."
+  ],
+  "safety_warnings": [
+   "Use only pesticides registered (CIB&RC) for this crop, at the dose printed on the label.",
+   "Wear gloves, a mask and full-sleeve clothing while spraying; do not spray against the wind.",
+   "Respect the pre-harvest interval on the label before harvesting.",
+   "Confirm the diagnosis with your agriculture officer, KVK or Kisan Call Centre (1800-180-1551) before spraying."
+  ]
+ },
+ {
+  "slug": "tomato.late_blight",
+  "crop_slug": "tomato",
+  "names": {
+   "en": "Tomato late blight"
+  },
+  "is_healthy": false,
+  "pathogen_type": "oomycete",
+  "cause": "Water mould Phytophthora infestans, spreading quickly through airborne spores.",
+  "symptoms": [
+   "Large, greasy, dark green to brown patches on leaves",
+   "White mould on leaf undersides in humid weather",
+   "Firm brown patches on fruit"
+  ],
+  "favorable_conditions": [
+   "Cool (10-20°C), humid or foggy weather",
+   "Long leaf wetness"
+  ],
+  "treatment": [
+   "Act quickly: spray a registered fungicide such as metalaxyl + mancozeb or cymoxanil + mancozeb at label dose; follow with contact fungicide as per label.",
+   "Remove and destroy infected plants."
+  ],
+  "prevention": [
+   "Avoid overhead irrigation",
+   "Space plants for air flow",
+   "Preventive mancozeb spray when cool, wet weather is forecast"
+  ],
+  "fertilizer_guidance": [
+   "Follow your Soil Health Card; avoid excess nitrogen, which makes leaves soft and more susceptible.",
+   "Adequate potassium improves disease tolerance."
+  ],
+  "safety_warnings": [
+   "Use only pesticides registered (CIB&RC) for this crop, at the dose printed on the label.",
+   "Wear gloves, a mask and full-sleeve clothing while spraying; do not spray against the wind.",
+   "Respect the pre-harvest interval on the label before harvesting.",
+   "Confirm the diagnosis with your agriculture officer, KVK or Kisan Call Centre (1800-180-1551) before spraying."
+  ]
+ },
+ {
+  "slug": "tomato.leaf_mold",
+  "crop_slug": "tomato",
+  "names": {
+   "en": "Tomato leaf mould"
+  },
+  "is_healthy": false,
+  "pathogen_type": "fungus",
+  "cause": "Fungus Passalora fulva (Cladosporium fulvum).",
+  "symptoms": [
+   "Pale yellow spots on upper leaf surface",
+   "Olive-green velvety mould under the spots",
+   "Leaves curl and dry"
+  ],
+  "favorable_conditions": [
+   "High humidity (above 85%)",
+   "Greenhouses or crowded plants with poor ventilation"
+  ],
+  "treatment": [
+   "Improve ventilation and spray a registered fungicide such as chlorothalonil or mancozeb at label dose.",
+   "Remove and destroy badly infected leaves and fallen debris; do not compost them."
+  ],
+  "prevention": [
+   "Space plants and prune lower leaves",
+   "Keep humidity low in protected cultivation",
+   "Use resistant varieties"
+  ],
+  "fertilizer_guidance": [
+   "Follow your Soil Health Card; avoid excess nitrogen, which makes leaves soft and more susceptible.",
+   "Adequate potassium improves disease tolerance."
+  ],
+  "safety_warnings": [
+   "Use only pesticides registered (CIB&RC) for this crop, at the dose printed on the label.",
+   "Wear gloves, a mask and full-sleeve clothing while spraying; do not spray against the wind.",
+   "Respect the pre-harvest interval on the label before harvesting.",
+   "Confirm the diagnosis with your agriculture officer, KVK or Kisan Call Centre (1800-180-1551) before spraying."
+  ]
+ },
+ {
+  "slug": "tomato.septoria_leaf_spot",
+  "crop_slug": "tomato",
+  "names": {
+   "en": "Tomato Septoria leaf spot"
+  },
+  "is_healthy": false,
+  "pathogen_type": "fungus",
+  "cause": "Fungus Septoria lycopersici, surviving on debris and weeds.",
+  "symptoms": [
+   "Many small round spots with dark borders and grey-white centres on lower leaves",
+   "Tiny black dots in spot centres",
+   "Heavy leaf drop"
+  ],
+  "favorable_conditions": [
+   "Warm, wet weather",
+   "Rain splash"
+  ],
+  "treatment": [
+   "Spray a registered fungicide such as mancozeb or chlorothalonil at label dose.",
+   "Remove and destroy badly infected leaves and fallen debris; do not compost them."
+  ],
+  "prevention": [
+   "Crop rotation",
+   "Mulching",
+   "Remove nightshade weeds"
+  ],
+  "fertilizer_guidance": [
+   "Follow your Soil Health Card; avoid excess nitrogen, which makes leaves soft and more susceptible.",
+   "Adequate potassium improves disease tolerance."
+  ],
+  "safety_warnings": [
+   "Use only pesticides registered (CIB&RC) for this crop, at the dose printed on the label.",
+   "Wear gloves, a mask and full-sleeve clothing while spraying; do not spray against the wind.",
+   "Respect the pre-harvest interval on the label before harvesting.",
+   "Confirm the diagnosis with your agriculture officer, KVK or Kisan Call Centre (1800-180-1551) before spraying."
+  ]
+ },
+ {
+  "slug": "tomato.spider_mites",
+  "crop_slug": "tomato",
+  "names": {
+   "en": "Two-spotted spider mite (tomato)"
+  },
+  "is_healthy": false,
+  "pathogen_type": "mite",
+  "cause": "Tiny sap-sucking mite Tetranychus urticae (not a fungus — fungicides do not work).",
+  "symptoms": [
+   "Fine yellow or white speckling on leaves",
+   "Fine webbing under leaves",
+   "Leaves turn bronze and dry"
+  ],
+  "favorable_conditions": [
+   "Hot, dry weather",
+   "Dusty conditions",
+   "Overuse of broad-spectrum insecticides that kill natural predators"
+  ],
+  "treatment": [
+   "Spray a registered acaricide/miticide (e.g. spiromesifen, fenpyroximate) at label dose, covering leaf undersides.",
+   "Neem-based products (azadirachtin) help at early stages."
+  ],
+  "prevention": [
+   "Keep plants well watered",
+   "Conserve predatory mites and insects",
+   "Remove heavily infested leaves"
+  ],
+  "fertilizer_guidance": [
+   "Follow your Soil Health Card; avoid excess nitrogen, which makes leaves soft and more susceptible.",
+   "Adequate potassium improves disease tolerance."
+  ],
+  "safety_warnings": [
+   "Use only pesticides registered (CIB&RC) for this crop, at the dose printed on the label.",
+   "Wear gloves, a mask and full-sleeve clothing while spraying; do not spray against the wind.",
+   "Respect the pre-harvest interval on the label before harvesting.",
+   "Confirm the diagnosis with your agriculture officer, KVK or Kisan Call Centre (1800-180-1551) before spraying."
+  ]
+ },
+ {
+  "slug": "tomato.target_spot",
+  "crop_slug": "tomato",
+  "names": {
+   "en": "Tomato target spot"
+  },
+  "is_healthy": false,
+  "pathogen_type": "fungus",
+  "cause": "Fungus Corynespora cassiicola.",
+  "symptoms": [
+   "Brown spots with light centres and concentric rings on leaves",
+   "Spots on stems and fruit",
+   "Leaf drop"
+  ],
+  "favorable_conditions": [
+   "Warm, humid weather",
+   "Dense canopy"
+  ],
+  "treatment": [
+   "Spray a registered fungicide such as chlorothalonil or azoxystrobin at label dose.",
+   "Remove and destroy badly infected leaves and fallen debris; do not compost them."
+  ],
+  "prevention": [
+   "Improve air flow by pruning and staking",
+   "Crop rotation",
+   "Remove crop debris"
+  ],
+  "fertilizer_guidance": [
+   "Follow your Soil Health Card; avoid excess nitrogen, which makes leaves soft and more susceptible.",
+   "Adequate potassium improves disease tolerance."
+  ],
+  "safety_warnings": [
+   "Use only pesticides registered (CIB&RC) for this crop, at the dose printed on the label.",
+   "Wear gloves, a mask and full-sleeve clothing while spraying; do not spray against the wind.",
+   "Respect the pre-harvest interval on the label before harvesting.",
+   "Confirm the diagnosis with your agriculture officer, KVK or Kisan Call Centre (1800-180-1551) before spraying."
+  ]
+ },
+ {
+  "slug": "tomato.yellow_leaf_curl_virus",
+  "crop_slug": "tomato",
+  "names": {
+   "en": "Tomato yellow leaf curl virus"
+  },
+  "is_healthy": false,
+  "pathogen_type": "virus",
+  "cause": "Begomovirus spread by the whitefly Bemisia tabaci.",
+  "symptoms": [
+   "Leaves curl upward and turn yellow at edges",
+   "Plants stunted and bushy",
+   "Few flowers and fruit"
+  ],
+  "favorable_conditions": [
+   "High whitefly populations",
+   "Warm, dry weather"
+  ],
+  "treatment": [
+   "Virus cannot be cured. Uproot and destroy infected plants early.",
+   "Control whiteflies with yellow sticky traps and a registered insecticide at label dose."
+  ],
+  "prevention": [
+   "Grow virus-tolerant varieties",
+   "Raise seedlings under insect-proof net",
+   "Remove weed hosts",
+   "Use reflective mulch"
+  ],
+  "fertilizer_guidance": [
+   "Balanced nutrition keeps plants vigorous but does not cure the virus."
+  ],
+  "safety_warnings": [
+   "Use only pesticides registered (CIB&RC) for this crop, at the dose printed on the label.",
+   "Wear gloves, a mask and full-sleeve clothing while spraying; do not spray against the wind.",
+   "Respect the pre-harvest interval on the label before harvesting.",
+   "Confirm the diagnosis with your agriculture officer, KVK or Kisan Call Centre (1800-180-1551) before spraying."
+  ]
+ },
+ {
+  "slug": "tomato.mosaic_virus",
+  "crop_slug": "tomato",
+  "names": {
+   "en": "Tomato mosaic virus"
+  },
+  "is_healthy": false,
+  "pathogen_type": "virus",
+  "cause": "Tobamovirus spread by contact — hands, tools and infected seed.",
+  "symptoms": [
+   "Light and dark green mottled (mosaic) pattern on leaves",
+   "Leaves distorted or fern-like",
+   "Uneven fruit ripening"
+  ],
+  "favorable_conditions": [
+   "Handling plants with contaminated hands or tools",
+   "Infected seed"
+  ],
+  "treatment": [
+   "No cure. Remove and destroy infected plants.",
+   "Wash hands with soap and disinfect tools after handling plants."
+  ],
+  "prevention": [
+   "Use certified, virus-free seed",
+   "Do not smoke or use tobacco while handling plants",
+   "Grow resistant varieties"
+  ],
+  "fertilizer_guidance": [
+   "Balanced nutrition keeps plants vigorous but does not cure the virus."
+  ],
+  "safety_warnings": [
+   "Use only pesticides registered (CIB&RC) for this crop, at the dose printed on the label.",
+   "Wear gloves, a mask and full-sleeve clothing while spraying; do not spray against the wind.",
+   "Respect the pre-harvest interval on the label before harvesting.",
+   "Confirm the diagnosis with your agriculture officer, KVK or Kisan Call Centre (1800-180-1551) before spraying."
+  ]
+ },
+ {
+  "slug": "tomato.healthy",
+  "crop_slug": "tomato",
+  "names": {
+   "en": "Healthy tomato"
+  },
+  "is_healthy": true,
+  "pathogen_type": "",
+  "cause": "",
+  "symptoms": [],
+  "favorable_conditions": [],
+  "treatment": [],
+  "prevention": [
+   "Keep checking the crop every week, especially after rain or humid weather.",
+   "Remove weeds and keep the field clean."
+  ],
+  "fertilizer_guidance": [
+   "Continue balanced nutrition as per your soil test."
+  ],
+  "safety_warnings": []
+ }
+]
