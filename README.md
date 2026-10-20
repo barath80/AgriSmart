@@ -78,29 +78,213 @@ weather and crop advice for their own farm.
 
 ## 3. Architecture
 
-```
- Farmer phone (Expo Go / APK / web)     Button phone (voice call)
-            |                                    |
-            |  HTTPS                             |  Twilio
-            v                                    v
-        nginx / Caddy  (load balancer: least_conn, keepalive, request IDs)
-            |                       \
-            v                        v
-   FastAPI  x N  (stateless)      Next.js admin dashboard
-            |
-     +------+---------------------------+
-     |      |                           |
- PostgreSQL |   ML runtime (ONNX, XGBoost)   External: Open-Meteo, Agmarknet,
- (state)    |   bounded thread pool          Sarvam / Gemini voice, Twilio, myScheme
-            |
-     Worker process  (alerts, notifications, price refresh, scheme sync)
-```
+> The diagrams below are drawn with Mermaid, which GitHub renders automatically. PNG copies of the
+> main figures are in [docs/images/](docs/images). The full written report is in
+> [docs/AgriSmart_Project_Documentation.pdf](docs/AgriSmart_Project_Documentation.pdf) (also as .docx).
+
+![Detailed layered architecture](docs/images/architecture-detailed.png)
+
+*Layered view of the whole system. More detail: [docs/ARCHITECTURE.md](docs/ARCHITECTURE.md).*
+
+![System architecture](docs/images/architecture.png)
 
 * **Backend**: Python 3.12, FastAPI, SQLAlchemy (async), Alembic migrations, PostgreSQL.
 * **Mobile**: Expo SDK 57, React Native 0.86, Expo Router, TanStack Query, i18next.
 * **Admin**: Next.js 16, React 19.
 * **ML**: XGBoost and MobileNetV3 exported to ONNX (int8 where accuracy allows).
 * The API is **stateless**; any instance can serve any request, so it scales by adding copies.
+
+### 3.1 Technology stack at a glance
+
+```mermaid
+flowchart LR
+  subgraph Clients
+    A["Farmer app<br/>Expo Go / APK<br/>React Native 0.86"]
+    B["Farmer web<br/>Expo web, same code"]
+    C["Admin website<br/>Next.js 16 + React 19"]
+    D["Button phone<br/>voice call"]
+  end
+  subgraph Edge
+    E["nginx<br/>least_conn, health checks<br/>request IDs, rate limits"]
+  end
+  subgraph Backend["Backend (Python 3.12)"]
+    F["FastAPI x N<br/>stateless, async"]
+    G["Worker<br/>alerts, prices, schemes"]
+    H["ML runtime<br/>XGBoost + ONNX<br/>bounded thread pool"]
+  end
+  subgraph Data
+    I[("PostgreSQL 16<br/>30 tables<br/>Alembic migrations")]
+  end
+  subgraph External["External services"]
+    J["Open-Meteo<br/>weather"]
+    K["Agmarknet / data.gov.in<br/>mandi prices"]
+    L["Gemini / Sarvam<br/>speech + translation"]
+    M["Twilio<br/>phone calls, SMS"]
+  end
+  A --> E
+  B --> E
+  C --> E
+  D --> M --> E
+  E --> F
+  F --> H
+  F --> I
+  G --> I
+  F --> J
+  F --> K
+  F --> L
+  G --> M
+```
+
+### 3.2 Life of one request
+
+```mermaid
+sequenceDiagram
+  autonumber
+  participant App as Farmer app
+  participant LB as nginx
+  participant API as FastAPI
+  participant Brain as AgriBrain (rules)
+  participant Tool as Tool / ML model
+  participant DB as PostgreSQL
+  App->>LB: POST /assistant/query (bearer token)
+  LB->>API: least busy instance
+  API->>API: verify token, per-user rate limit
+  API->>DB: load farmer context (language, location, farms)
+  API->>Brain: detect intent (11 languages + English)
+  Brain->>Tool: weather / price / scheme / crop / disease ...
+  Tool->>DB: read data or cache
+  Tool-->>API: result
+  API->>DB: save chat messages with intent and latency
+  API-->>App: reply in the farmer's language
+```
+
+### 3.3 Database schema (30 tables)
+
+Key tables and relationships. The full column list is in the report, section 7.
+
+```mermaid
+erDiagram
+  USERS ||--o| FARMERS : "has profile"
+  USERS ||--o{ AUTH_SESSIONS : "signed-in devices"
+  USERS ||--o{ AUDIT_LOGS : "admin actions"
+  FARMERS }o--o| LOCATIONS : "lives in"
+  FARMERS ||--o{ FARMS : owns
+  FARMS ||--o{ SOIL_RECORDS : "soil tests"
+  FARMS ||--o{ CROP_CYCLES : "seasons"
+  CROPS ||--o{ CROP_CYCLES : "grown as"
+  CROP_CYCLES ||--o{ CALENDAR_EVENTS : "tasks"
+  FARMERS ||--o{ CHAT_SESSIONS : talks
+  CHAT_SESSIONS ||--o{ CHAT_MESSAGES : contains
+  FARMERS ||--o{ VOICE_SESSIONS : "voice calls"
+  FARMERS ||--o{ DISEASE_PREDICTIONS : "photo checks"
+  FARMERS ||--o{ SUPPORT_MESSAGES : "help chat"
+  FARMERS ||--o{ NOTIFICATION_DELIVERIES : receives
+  NOTIFICATIONS ||--o{ NOTIFICATION_DELIVERIES : "sent as"
+  MARKETS ||--o{ MARKET_PRICES : reports
+  GOVERNMENT_SCHEMES ||--o{ SCHEME_RULES : "eligibility"
+  USERS {
+    uuid id PK
+    string role
+    string phone
+    string email
+    string password_hash "Argon2id"
+    int failed_logins
+    datetime locked_until
+  }
+  FARMERS {
+    uuid id PK
+    uuid user_id FK
+    string name
+    string preferred_language
+    json voice_preferences
+  }
+  FARMS {
+    uuid id PK
+    uuid farmer_id FK
+    float area_acres
+    string soil_type
+    string irrigation
+  }
+  CROP_CYCLES {
+    uuid id PK
+    uuid farm_id FK
+    uuid crop_id FK
+    string season
+    date sowing_date
+    string status
+  }
+  CHAT_MESSAGES {
+    uuid id PK
+    uuid session_id FK
+    string role
+    string intent
+    string handled_by
+    int latency_ms
+  }
+  MARKET_PRICES {
+    uuid id PK
+    uuid market_id FK
+    string commodity
+    date arrival_date
+    float modal_price
+  }
+  AUTH_SESSIONS {
+    uuid id PK
+    uuid user_id FK
+    string refresh_token_hash
+    datetime revoked_at
+  }
+```
+
+### 3.4 Farmer app screens
+
+```mermaid
+flowchart TD
+  Start([Open the app]) --> Lang{"Language<br/>chosen?"}
+  Lang -- no --> Welcome["Welcome:<br/>choose one of 11 languages"]
+  Welcome --> Login
+  Lang -- yes --> Signed{"Signed in?"}
+  Signed -- no --> Login["Login:<br/>Sign in / Create account /<br/>code / forgot password"]
+  Signed -- yes --> Tabs
+  Login --> Tabs
+  subgraph Tabs["Main tabs"]
+    Home["Home:<br/>assistant, microphone, alerts"]
+    Farm["Farm:<br/>farms, crops, soil"]
+    Profile["Profile:<br/>language, voice, password"]
+  end
+  Home --> Assistant["Assistant (text + voice)"]
+  Home --> Weather
+  Home --> Market["Mandi prices"]
+  Home --> Schemes["Government schemes"]
+  Home --> Diagnose["Photo check:<br/>disease / pest"]
+  Home --> Advice["Crop advice"]
+  Home --> Yield["Yield forecast"]
+  Home --> Profit["Profit calculator"]
+  Home --> Calendar["Farming calendar"]
+  Home --> Alerts
+  Home --> Support["Support chat"]
+  Farm --> AddFarm["Add farm"]
+  Farm --> AddCrop["Add crop"]
+  Farm --> Soil["Soil test"]
+```
+
+### 3.5 Admin dashboard pages
+
+```mermaid
+flowchart LR
+  Login["Admin login<br/>(httpOnly cookies)"] --> Dash
+  subgraph Admin["Admin dashboard"]
+    Dash["Overview:<br/>Dashboard, Analytics,<br/>System health"]
+    People["People:<br/>Farmers, Farms,<br/>Support chat"]
+    Content["Knowledge:<br/>Crops, Diseases, Pests,<br/>Schemes, Markets, Weather"]
+    AI["AI and voice:<br/>Models (activate / roll back),<br/>Voice calls"]
+    Notify["Notifications:<br/>send alerts"]
+  end
+  Dash --> People
+  Dash --> Content
+  Dash --> AI
+  Dash --> Notify
+```
 
 ## 4. The AI models: accuracy and worst case
 
@@ -109,6 +293,30 @@ All figures below are read from the model files in `ml/artifacts/*/metadata.json
 split. **A held-out split is not the same as truly new data**, and a 99 % score on it should not
 be read as 99 % in a farmer's field. Section 4.3 re-tests every model on harder, unseen
 conditions and gives the honest picture.
+
+### 4.0 How the models are built, tested and served
+
+```mermaid
+flowchart LR
+  D["Kaggle datasets<br/>crop, yield, disease, pest"] --> Clean["Clean:<br/>drop duplicates,<br/>remove outliers"]
+  Clean --> Split{Split}
+  Split -- crop --> S1["Stratified 80/20<br/>+ 5-fold CV on train"]
+  Split -- yield --> S2["By year:<br/>train 1997-2015<br/>valid 2016-17<br/>test 2018-20"]
+  Split -- disease --> S3["train/ folder -> train + valid<br/>shipped valid/ = test"]
+  Split -- pest --> S4["Stratified 70 / 15 / 15"]
+  S1 --> X["XGBoost<br/>random search<br/>on train only"]
+  S2 --> X
+  S3 --> M["MobileNetV3<br/>head first, then<br/>fine-tune"]
+  S4 --> M
+  X --> Art["Versioned artifact<br/>+ metadata.json"]
+  M --> Onnx["ONNX export<br/>int8 where accuracy allows"] --> Art
+  Art --> Reg["ml_models table:<br/>register, activate, roll back"]
+  Reg --> Serve["Backend ML runtime"]
+  Serve --> Gates["Confidence gate +<br/>photo-quality gate +<br/>subject gate"]
+  Gates --> Farmer(["Answer or<br/>'not sure, retake photo'"])
+```
+
+![How each dataset is split](docs/images/train-test-split.png)
 
 ### 4.1 Summary
 
@@ -137,6 +345,8 @@ How the results should be read:
   smaller). Pest stays fp32 because int8 dropped it from 91.5 % to 70.5 %.
 
 ### 4.2 Worst case: damaged and unexpected photos
+
+![Accuracy under damaged photos](docs/images/worst-case-photo-damage.png)
 
 300 test images each, with the model's real confidence threshold applied
 (`robustness_disease.json`, `robustness_pest.json`). "Wrong and accepted" is the dangerous
@@ -180,6 +390,8 @@ photo" message, and a recorded diagnosis flagged `accepted` or `uncertain` for a
 officer before spraying.
 
 ### 4.3 Validation on truly unseen data
+
+![Reported versus stress-tested accuracy](docs/images/accuracy-reported-vs-honest.png)
 
 A high test score can hide leakage, an easy dataset, or a model that only learned the
 average. These checks (scripts in [ml/checks/](ml/checks)) were run on the real datasets and the
@@ -270,6 +482,31 @@ uses a keyword list per language (`backend/app/assistant/lexicons`).
    -> AgriBrain (NLU rules -> tool / ML model / database -> reply text in the farmer's language)
    -> text-to-speech (male or female voice) -> audio back to the app
 ```
+![From question to answer](docs/images/assistant-workflow.png)
+
+```mermaid
+sequenceDiagram
+  autonumber
+  participant App as Farmer app
+  participant API as FastAPI
+  participant ASR as Speech to text<br/>Sarvam, Gemini lite, Gemini flash
+  participant Brain as AgriBrain
+  participant TTS as Text to speech<br/>Sarvam, Gemini
+  App->>API: POST /voice/session/{id}/utterance (recording)
+  API->>ASR: transcribe (max 30 s)
+  ASR-->>API: transcript, spoken language
+  API->>Brain: handle(text, language)
+  Brain-->>API: reply text in that language
+  API->>TTS: speak(reply, male or female voice)
+  alt server voice available
+    TTS-->>API: WAV audio
+    API-->>App: text + audio
+  else credits or free quota used up
+    API-->>App: text only
+    App->>App: speak with the phone's own voice
+  end
+```
+
 * If server speech is unavailable the app falls back to the phone's own text-to-speech.
 * `GET /voice/capabilities` tells the app what the server can do, so buttons only appear when
   they will work.
@@ -364,6 +601,24 @@ second of thinking time. Full method in [backend/loadtest/README.md](backend/loa
   must stay below PostgreSQL `max_connections`. If the pool is exhausted the API answers
   **503 `service_busy` with `Retry-After`** instead of crashing.
 
+![Measured latency](docs/images/load-test-latency.png)
+
+```mermaid
+flowchart LR
+  C["Phones and browsers"] --> N["nginx<br/>least_conn, keepalive 64<br/>200 req/s per IP, request IDs"]
+  N -- "least busy" --> A1["API 1<br/>2 workers"]
+  N --> A2["API 2<br/>2 workers"]
+  N --> A3["API N<br/>2 workers"]
+  N -.-> Adm["Admin<br/>Next.js"]
+  A1 --> Pool
+  A2 --> Pool
+  A3 --> Pool
+  Pool["DB pools:<br/>replicas x workers x (pool + overflow)<br/>must stay below max_connections"] --> PG[("PostgreSQL<br/>max_connections 200")]
+  W["Worker<br/>FOR UPDATE SKIP LOCKED"] --> PG
+  A1 --> ML["ML thread pool<br/>CapacityLimiter"]
+  Pool -. "pool full for 10 s" .-> Busy["503 service_busy<br/>Retry-After"]
+```
+
 ### Latency work that changed the code
 * XGBoost was using all CPU cores for a single-row prediction: 54.6 ms CPU versus 7.4 ms
   single-threaded. It is now pinned to one thread (about 4x less CPU per request).
@@ -411,6 +666,32 @@ second of thinking time. Full method in [backend/loadtest/README.md](backend/loa
 | Proxy trust | The client IP is taken only from the load balancer, never from a user-supplied header |
 | Audit | Admin actions are written to an audit log |
 | Observability | Request IDs, structured logs, metrics |
+
+### Sign-in and token flow
+
+```mermaid
+sequenceDiagram
+  autonumber
+  participant App as Phone or web app
+  participant API as FastAPI
+  participant DB as PostgreSQL
+  App->>API: POST /auth/register (phone or e-mail, password, name)
+  API->>DB: create user with Argon2id hash + farmer profile
+  API-->>App: access token (30 min) + refresh token (30 days)
+  Note over App: tokens kept in the phone's secure store
+  App->>API: POST /auth/password-login
+  API->>DB: read hash, check lock
+  alt wrong password or unknown account
+    API->>DB: failed_logins + 1 (5 wrong = locked 15 min)
+    API-->>App: 401, same message and same time for any wrong input
+  else correct password
+    API->>DB: reset counter, store hashed refresh token
+    API-->>App: new token pair
+  end
+  App->>API: POST /auth/refresh
+  API->>DB: lock the session row, revoke old token, issue new pair
+  API-->>App: new token pair
+```
 
 ## 10. Run everything locally
 
@@ -626,6 +907,34 @@ Before going live set: `ENVIRONMENT=production`, a strong `JWT_SECRET`, `CORS_OR
 `PUBLIC_BASE_URL`, and the provider keys you use. Password sign-in needs no paid service. If you
 choose `SMS_PROVIDER=twilio` or `EMAIL_PROVIDER=smtp`, their settings must be complete or the app
 refuses to start. `DEMO_LOGIN=true` is for demos only: it shows sign-in codes to everyone.
+
+### Deployment options
+
+```mermaid
+flowchart TB
+  subgraph Local["Local development: start-all.ps1"]
+    L1[("Bundled PostgreSQL")] --- L2["uvicorn API :8000"]
+    L3["Worker"] --> L1
+    L4["Admin :3000"] --> L2
+    L5["Expo :8081 + QR code"] --> L2
+  end
+  subgraph Docker["One server: Docker Compose"]
+    D0["nginx :80"] --> D1["api x N<br/>--scale api=N"]
+    D0 --> D2["admin"]
+    D1 --> D3[("postgres 16")]
+    D4["worker"] --> D3
+    D5["migrate<br/>one-shot"] --> D3
+  end
+  subgraph Free["Free-tier hosting"]
+    F1[("Supabase<br/>PostgreSQL")]
+    F2["Hugging Face Space<br/>API + worker + web app"]
+    F3["Vercel<br/>admin"]
+    F4["EAS Build<br/>Android APK"]
+    F2 --> F1
+    F3 --> F2
+    F4 -. "API address" .-> F2
+  end
+```
 
 ## 15. Testing
 
