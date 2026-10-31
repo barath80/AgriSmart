@@ -1,0 +1,56 @@
+Loaded 10429 rows: 19 crops, 30 states, years 1997–2020
+train 8235 1997 2015 | valid 1084 | test 1110 2018 2020
+
+[1] SERVED MODEL on unseen future years: MAE 1.51  RMSE 5.03  R2 0.91  MAPE 21.55  medAPE 14.44  within20 62.07  within50 91.71
+    P10-P90 coverage: 0.7847
+
+[2] BASELINES (no ML) on the same test years  -> does the model add value?
+    crop median only        : MAE 2.95  RMSE 8.99  R2 0.70  MAPE 45.96  medAPE 31.86  within20 31.44  within50 74.95
+    crop+state median       : MAE 1.47  RMSE 4.67  R2 0.92  MAPE 24.86  medAPE 19.93  within20 50.18  within50 91.17
+
+[3] WHERE IT FAILS: error by crop (test years)
+              n  mean_yield  medAPE  MAPE
+crop                                     
+lentil       37         0.8     6.9  13.1
+wheat        49         2.4    14.4  14.3
+rice        120         2.7     9.1  14.5
+ragi         53         1.4    12.1  15.2
+pigeon_pea   53         1.0    11.4  15.9
+black_gram   82         0.7    13.3  17.0
+groundnut    77         1.7    14.5  18.0
+maize       102         3.1    15.8  19.9
+jowar        50         1.1    16.5  20.2
+mustard      53         0.9    15.5  20.7
+sugarcane    53        63.7    13.2  21.7
+soybean      42         1.2    19.7  22.4
+banana       22        39.1    17.9  22.9
+green_gram   83         0.6    16.4  23.4
+potato       69        13.0    17.0  25.2
+chickpea     48         1.0    19.6  27.5
+bajra        56         2.1    21.3  28.8
+onion        50        13.6    34.6  44.9
+moth_bean    11         0.5    28.8  88.8
+    R2 without sugarcane/banana/potato/onion (big-yield crops): 0.618
+
+[4] ABLATION: drop rainfall/fertilizer/pesticide (retrain, fixed 468 rounds) -> how much do the 'real' inputs matter?
+    all features      : MAE 2.02  RMSE 6.96  R2 0.82  MAPE 27.16  medAPE 18.51  within20 52.97  within50 88.02
+    only year+cat     : MAE 1.90  RMSE 6.43  R2 0.85  MAPE 27.20  medAPE 17.68  within20 54.59  within50 88.02
+    only crop+state   : MAE 2.17  RMSE 6.99  R2 0.82  MAPE 29.39  medAPE 23.93  within20 41.71  within50 86.40
+
+[5] UNSEEN STATE: hold out a whole state (never seen in training), all years
+    Meghalaya          n= 272: MAE 4.30  RMSE 12.74  R2 -11.36  MAPE 147.42  medAPE 17.20  within20 57.35  within50 87.50
+    Haryana            n= 351: MAE 1.96  RMSE 5.55  R2 0.88  MAPE 50.32  medAPE 30.36  within20 33.90  within50 78.92
+    Delhi              n= 152: MAE 2.64  RMSE 5.80  R2 0.92  MAPE 37.99  medAPE 31.83  within20 36.18  within50 81.58
+    Tamil Nadu         n= 370: MAE 5.22  RMSE 13.86  R2 0.71  MAPE 71.79  medAPE 43.04  within20 24.32  within50 61.08
+    Uttar Pradesh      n= 490: MAE 2.75  RMSE 6.93  R2 0.80  MAPE 30.47  medAPE 24.21  within20 42.04  within50 81.84
+    Andhra Pradesh     n= 594: MAE 2.58  RMSE 6.17  R2 0.85  MAPE 48.00  medAPE 37.04  within20 24.58  within50 69.70
+    AVERAGE over held-out states: MAE 3.24  RMSE 8.51  R2 -1.20  MAPE 64.33  medAPE 30.61  within20 36.40  within50 76.77
+
+[6] UNSEEN CROP: hold out a whole crop
+    wheat      n= 531: MAE 1.10  RMSE 1.45  R2 -0.95  MAPE 45.85  medAPE 47.47  within20 12.24  within50 54.80
+    rice       n=1173: MAE 1.27  RMSE 1.45  R2 -2.46  MAPE 50.88  medAPE 55.04  within20 6.31  within50 37.17
+    maize      n= 954: MAE 1.44  RMSE 1.94  R2 -1.04  MAPE 50.27  medAPE 52.06  within20 7.23  within50 47.17
+    groundnut  n= 709: MAE 0.46  RMSE 0.61  R2 -0.04  MAPE 31.62  medAPE 30.05  within20 33.15  within50 84.49
+    chickpea   n= 480: MAE 0.34  RMSE 0.44  R2 -1.44  MAPE 52.47  medAPE 37.89  within20 33.33  within50 62.71
+    mustard    n= 516: MAE 0.43  RMSE 0.53  R2 -0.87  MAPE 102.24  medAPE 44.57  within20 24.42  within50 53.88
+    AVERAGE: MAE 0.84  RMSE 1.07  R2 -1.13  MAPE 55.56  medAPE 44.51  within20 19.45  within50 56.70

@@ -294,6 +294,13 @@ split. **A held-out split is not the same as truly new data**, and a 99 % score 
 be read as 99 % in a farmer's field. Section 4.3 re-tests every model on harder, unseen
 conditions and gives the honest picture.
 
+> **Re-verified on 31 October 2026.** Every table in sections 4.1-4.3 was regenerated from the
+> served models and the real datasets (`ml/eval_robustness.py --n 300`, `ml/checks/crop_check.py`,
+> `ml/checks/yield_check.py`) and matched the figures below. The raw outputs are saved in
+> [docs/results/](docs/results) (`robustness_disease.json`, `robustness_pest.json`,
+> `crop_check.txt`, `yield_check.txt`). The load-test figures in section 7 are from the
+> 2 October run and were not repeated; they depend on the machine.
+
 ### 4.0 How the models are built, tested and served
 
 ```mermaid
