@@ -474,6 +474,88 @@ A near-duplicate check (perceptual hash) between its training and test images fo
 * Each model is versioned (`crop_v1..v3`, `yield_v1..v3`) and an admin can activate or roll
   back a version without redeploying.
 
+### 4.5 Complete statistics reference (all models)
+
+Every value is copied from `ml/artifacts/*/*/metadata.json` (the model files) or from the
+check outputs in [docs/results/](docs/results). Nothing here is estimated.
+
+**Crop recommendation** (`crop_v1`..`crop_v3`; dataset `Crop_recommendation.csv`, 2,200 rows,
+22 crops x 100 rows, 7 features: N, P, K, temperature, humidity, pH, rainfall)
+
+| Metric | v1 | v2 | v3 (served) |
+|---|---|---|---|
+| Train / test rows | 1,760 / 440 | 1,760 / 440 | 1,760 / 440 |
+| Test accuracy | 99.55 % | 99.55 % | 99.55 % |
+| Macro-F1 | 0.9955 | 0.9955 | 0.9955 |
+| Top-3 accuracy | 100 % | 100 % | 100 % |
+| Log-loss | 0.0198 | 0.0197 | 0.0197 |
+| 5-fold CV accuracy | 99.15 % ± 0.40 | 99.26 % ± 0.43 | 99.26 % ± 0.43 |
+| Model file | 3.6 MB | 9.9 MB | 9.9 MB (+ regional prior by state and season) |
+
+v2/v3 hyper-parameters: 800 trees, depth 8, learning rate 0.05, column sample 0.6, L2 = 2.0.
+Stress tests: 99.32 % plain split, kNN 97.95 %, logistic regression 97.27 %, atypical-20 % hold-out
+98.86 %, climate-band hold-outs 97.08-100 %, noise 10 / 25 / 50 / 100 % of spread =
+94.55 / 75.77 / 52.23 / 27.41 %.
+
+**Yield prediction** (`yield_v1`..`yield_v3`; dataset `crop_yield.csv`, 10,429 rows, 19 crops,
+30 states, 1997-2020; train 1997-2015 = 8,235 rows, validation 2016-17 = 1,084, test 2018-2020 = 1,110)
+
+| Metric | v1 | v2 | v3 (served) |
+|---|---|---|---|
+| R² | 0.8614 | 0.8614 | **0.9066** |
+| MAE (t/ha) | 1.739 | 1.739 | **1.508** |
+| RMSE (t/ha) | 6.123 | 6.123 | **5.026** |
+| Mean absolute % error | 15.59 % (see note) | 15.59 % | 21.55 % |
+| Median absolute % error | n/a | n/a | 14.44 % |
+| P10-P90 coverage, raw | 58.3 % | 58.3 % | 57.8 % |
+| P10-P90 coverage, calibrated | 58.3 % (none) | 77.1 % (x1.5) | 78.5 % (x1.75) |
+| Best boosting round | 1,538 | 1,538 | 468 |
+| Model file | 30.5 MB | 30.5 MB | 24.3 MB |
+
+Note: the 15.59 % stored in v1/v2 was actually a median-style figure; v3 stores the true mean
+(21.55 %) and the median (14.44 %) separately. v3 hyper-parameters: learning rate 0.08, depth 10,
+subsample 0.7, L2 = 0.5, target `log1p(yield)`. Forecasts within 20 % of truth: 62.1 %; within 50 %: 91.7 %.
+
+**Plant disease** (`disease_v1`; dataset PlantVillage-style, 38 classes, 14 crops; MobileNetV3-Large,
+192 px input; 5 training epochs: 1 head + 4 fine-tune)
+
+| Metric | Value |
+|---|---|
+| Test images | 17,572 (about 405-505 per class) |
+| Test accuracy / macro-F1 / top-3 | 99.79 % / 0.9978 / 99.99 % |
+| Confidence threshold | 0.30, answers 99.99 % of photos, 99.80 % correct on those |
+| Validation accuracy by epoch | 93.36 %, 98.93 %, 99.61 %, 99.78 %, 99.82 % |
+| Training accuracy by epoch | 86.16 %, 97.49 %, 99.24 %, 99.55 %, 99.74 % |
+| Quantisation | fp32 17.3 MB (100 % on check set) -> int8 4.9 MB (99.5 %), int8 served |
+| ONNX vs original max difference | 3.2e-6 |
+| Honest estimates | 98.9 % served int8 on 3,000 random test files; 98.1 % on photos never seen in training; about 38 % on mixed field-like damage |
+
+**Pest detection** (`pest_v1`; 12 classes: ants, bees, beetle, caterpillar, earthworms, earwig,
+grasshopper, moth, slug, snail, wasp, weevil; MobileNetV3-Large, 224 px; 14 epochs: 2 head + 12 fine-tune)
+
+| Metric | Value |
+|---|---|
+| Test images | 825 (48 to 75 per class) |
+| Test accuracy / macro-F1 / top-3 | 93.21 % / 0.9283 / 97.82 % |
+| Confidence threshold | 0.60, answers 88.73 % of photos, 97.40 % correct on those |
+| Validation accuracy | 84.97 % (epoch 1) rising to 94.06 % (final); training reached 99.56 % |
+| Quantisation | fp32 17.2 MB (91.5 % on check set) -> int8 4.9 MB (**70.5 %**), so fp32 is served |
+| ONNX vs original max difference | 3.2e-6 |
+| Duplicate check | 4 of 825 test images have a lookalike in training; accuracy 93.1 % either way |
+
+**Subject gate** (`subject_v1`; leaf/insect vs other, 224 px, 6,413 training images from the pest
+set plus Imagenette)
+
+| Metric | Value |
+|---|---|
+| Held-out accuracy | 96.26 % |
+| Real subjects kept | 95.84 % |
+| Non-plant photos rejected | 96.60 % |
+| Threshold / model size | 0.50 / 11.9 MB |
+
+**Latency** (development laptop, 2 October 2026, section 7): one instance, 100 farmers, p50 90 ms,
+p95 326 ms, p99 584 ms, 0 % errors over 2,696 requests.
+
 ## 5. Voice and native-language support
 
 ### Languages
